@@ -1,52 +1,94 @@
 # Hackathon Progress Tracker (8-Hour Clock)
 
-**Role:** Technical Co-Founder & Senior Engineering Team  
+**Role:** Autonomous Senior Technical Co-Founder & Engineering Team  
 **User Profile:** 2nd-Year CSE (Data Science) Student  
-**Current Milestone:** Hour 0.0 – Standby for Problem Statement  
+**Engineering Review:** Google Elephant-Goldfish Model (EGM)  
+**UI/UX Design:** Google Stitch (45-Min Timebox)  
+**Current Status:** Standby for Hackathon Problem Statement & Organizer Materials  
 
 ---
 
-## 8-Hour Execution Roadmap (Master Rulebook Section 10)
+## Strict 8-Hour Execution Roadmap
 
 ```
-[Hour 0.0 – 0.5] UNDERSTAND: Problem Statement, Organizer Rules, Target User, Key Outcome, Plan
-[Hour 0.5 – 1.0] DATA & INITIAL DESIGN: Inspect Organizer Data First, Initial EDA, Core Insight, Stitch 45-min block
-[Hour 1.0 – 2.5] WORKING VERTICAL SLICE: Real Data ➔ Processing ➔ Analysis/Model ➔ API ➔ One Screen
-[Hour 2.5 – 4.0] MVP COMPLETION: Core Features, Real Outputs, Frontend-Backend Integration, Working MVP
-[Hour 4.0 – 5.5] IMPROVEMENT: Distinctive Feature, Explainability/Model Polish, UI Polish
-[Hour 5.5 – 6.0] FEATURE FREEZE: Safe Improvements & Final Polish Only
-[Hour 6.0 – 6.5] TESTING & OFFLINE PREPARATION: E2E Tests, Local Startup, Offline Verification, Backup Video
-[Hour 6.5 – 8.0] PRESENTATION: Pitch Deck (PPT), 2-3 Min Live Demo Script, Rehearsal, Judge Q&A Defense
+[Phase A & B: Hours 0.0 – 0.5]
+  ➔ Understand Problem, Organizer Constraints, Judging Rubrics
+  ➔ Sourcing & Verification of Real, Credible Datasets (Organizer data first)
+  ➔ EGM Step 1 (Brainstorm) & Step 2 (Draft Specification)
+
+[Phase C & D: Hours 0.5 – 1.0]
+  ➔ EGM Step 3 (Independent Fresh-Context Goldfish Reviews)
+  ➔ EGM Step 4 & 5 (Resolve Findings & Readiness Check)
+  ➔ Google Stitch 45-Min Block (Visual Direction, Screens & DESIGN.md)
+  ➔ Present 22-Point Execution Plan to User
+  ➔ MANDATORY HUMAN APPROVAL CHECKPOINT (No implementation before approval)
+
+[Milestone 1: Hours 1.0 – 2.5]
+  ➔ Working Thin Vertical Slice (Data ➔ Clean ➔ Baseline Analysis/Model ➔ FastAPI ➔ One UI Screen)
+  ➔ Verified Running End-to-End; Git Commit Checkpoint
+
+[Milestone 2: Hours 2.5 – 4.0]
+  ➔ MVP Completion: Core Features, Real Data Outputs, Frontend-Backend Integration
+  ➔ Ready for Mentor/Judge Progress Check
+
+[Milestone 3: Hours 4.0 – 5.5]
+  ➔ Distinctive "Wow" Feature, Explainability (SHAP/Attributions), Premium UI Polish
+
+[Milestone 4: Hours 5.5 – 6.0]
+  ➔ FEATURE FREEZE: End-to-End Hardening (Zero new features)
+
+[Milestone 5: Hours 6.0 – 6.5]
+  ➔ Offline-First Verification (Disconnect Internet & Validate Core Journey)
+  ➔ Single-Command Runner & Backup Demo Video Recording
+
+[Milestone 6: Hours 6.5 – 8.0]
+  ➔ Presentation Deck (PPT), 2-3 Min Live Demo Script, Rehearsal, Judge Q&A Defense Sheet
+  ➔ Final Documentation (DATA_SOURCES.md, TECH_DECISIONS.md)
 ```
 
 ---
 
-## Priority Order (Section 1.1)
-1. **Working product**
-2. **Honest, genuine real data**
-3. **Clear and useful insight**
-4. **Premium UI**
-5. **Documentation**
+## 22-Point Execution Plan Checklist (Mandatory for Approval Checkpoint)
+- [ ] 1. Project name and concept
+- [ ] 2. Problem interpretation
+- [ ] 3. Target users
+- [ ] 4. Proposed solution
+- [ ] 5. Innovation and competitive advantage
+- [ ] 6. Dataset name and verified source
+- [ ] 7. Data-processing approach
+- [ ] 8. Whether ML is necessary
+- [ ] 9. Selected algorithm or analytical methodology
+- [ ] 10. Technology stack
+- [ ] 11. System architecture
+- [ ] 12. API and backend structure
+- [ ] 13. Frontend structure
+- [ ] 14. Google Stitch design direction
+- [ ] 15. Essential screens
+- [ ] 16. Core features
+- [ ] 17. Distinctive feature
+- [ ] 18. Eight-hour execution schedule
+- [ ] 19. Offline demonstration strategy
+- [ ] 20. Testing strategy
+- [ ] 21. Technical risks and fallback options
+- [ ] 22. PPT and judge-demonstration strategy
 
 ---
 
-## Definition of Done (18-Point Verification Checklist - Section 16)
-
-- [ ] 1. The application runs locally.
-- [ ] 2. Its main functionality works without internet (offline-ready).
-- [ ] 3. Genuine, relevant data is used (zero fabricated records).
-- [ ] 4. Data sources are traceable.
-- [ ] 5. No fabricated results or unverified metrics presented.
-- [ ] 6. Data processing and analysis/model work reliably.
-- [ ] 7. Frontend and backend are connected.
-- [ ] 8. Essential interactions, controls, and filters work.
-- [ ] 9. UI follows the approved Google Stitch direction.
-- [ ] 10. Interface is polished, responsive, and professional.
-- [ ] 11. Model evaluation is honest where applicable (baseline comparison, proper metrics).
-- [ ] 12. Distinctive feature is genuinely functional.
-- [ ] 13. Critical errors and warnings resolved.
-- [ ] 14. Backup demo recording / screenshots exist.
-- [ ] 15. `README.md` and `PITCH.md` notes are complete.
-- [ ] 16. Required short final documentation exists (`DATA_SOURCES.md`, `TECH_DECISIONS.md`).
-- [ ] 17. The product meets all organizer requirements.
-- [ ] 18. Student can explain every part of the solution to judges in plain language.
+## Definition of Done (17-Point Verification Checklist)
+- [ ] 1. Runs locally without error
+- [ ] 2. Core workflow works offline without internet
+- [ ] 3. Genuine and documented data used (zero synthetic/fabricated records)
+- [ ] 4. Traceable data sources in `DATA_SOURCES.md`
+- [ ] 5. Zero fabricated results or unverified metrics
+- [ ] 6. Data processing & analytical/model logic fully operational
+- [ ] 7. Frontend and backend seamlessly integrated
+- [ ] 8. Essential interactions, controls, and filters work
+- [ ] 9. UI follows approved Google Stitch designs
+- [ ] 10. UI is polished, responsive, and professional
+- [ ] 11. Honest model evaluation with baseline comparison where applicable
+- [ ] 12. Distinctive feature is genuinely functional
+- [ ] 13. Critical errors and warnings resolved
+- [ ] 14. Backup demo recording exists
+- [ ] 15. `README.md` and `PITCH.md` notes complete
+- [ ] 16. Organizer requirements strictly satisfied
+- [ ] 17. User can explain every formula, metric, and architecture choice to judges
