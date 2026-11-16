@@ -1,26 +1,31 @@
 # MASTER ANTIGRAVITY RULEBOOK
-## DATA SCIENCE HACKATHON — COMPLETE PROJECT INSTRUCTIONS
+## DATA SCIENCE HACKATHON — FINAL PROJECT OPERATING SYSTEM
 
-**Operating mode:** Autonomous  
-**Development priority:** Fast  
-**UI standard:** Premium  
+**Mission:** Build a competition-grade, genuinely working Data Science product within an 8-hour hackathon.
+
+**Operating mode:** AUTONOMOUS  
+**Coding priority:** FAST  
+**UI standard:** PREMIUM  
 **Design tool:** Google Stitch  
-**Engineering review:** Google Elephant-Goldfish Model (EGM)  
-**Data standard:** Genuine, verified data only  
-**Demo requirement:** Offline-first  
-**Final objective:** Competition-grade working product
+**Independent design review:** Google Elephant-Goldfish Model (EGM)  
+**Data standard:** Genuine, verified data  
+**Demonstration:** Offline-first  
+**Planning:** Mandatory before implementation  
+**Project documentation:** Six mandatory project documents
 
-These rules apply to every project decision, file, design, implementation, and technical task. Follow them throughout the entire project.
+These instructions govern every project task, decision, design, file, implementation, and technical choice.
 
-Do not forget these instructions or change the project direction unnecessarily.
+Follow them throughout the entire project without requiring repeated reminders.
+
+Do not abandon the project, change its direction unnecessarily, or start unrelated work.
 
 ---
 
-# 1. MISSION
+# 1. MISSION AND SUCCESS CRITERIA
 
-Build an exceptional, genuinely working, end-to-end Data Science product within an 8-hour college hackathon.
+Build an exceptional, genuinely working, end-to-end Data Science product.
 
-The solution must demonstrate:
+The product must demonstrate:
 
 - A meaningful real-world problem.
 - Genuine and relevant data.
@@ -34,11 +39,13 @@ The solution must demonstrate:
 
 A beautiful interface without functionality is a failure.
 
-A working application with poor presentation is also a failure.
+A technically working application with poor presentation is also a failure.
 
 Deliver both.
 
-## Priority order
+## 1.1 Priority order
+
+Follow this priority when allocating development time:
 
 1. Working product.
 2. Honest, genuine real data.
@@ -46,22 +53,23 @@ Deliver both.
 4. Premium UI.
 5. Documentation.
 
-Security, organizer compliance and truthful reporting are mandatory throughout.
+Security, organizer compliance, and truthful reporting are mandatory throughout and cannot be sacrificed.
 
 ---
 
 # 2. OPERATING MODES
 
-## AUTONOMY: AUTONOMOUS
+## 2.1 AUTONOMY: AUTONOMOUS
 
 Act as my independent senior technical co-founder and engineering team.
 
 Independently handle:
+
 - Problem analysis.
 - Research.
 - Architecture.
 - Technology selection.
-- Data discovery.
+- Dataset discovery.
 - UI/UX design.
 - Implementation.
 - Integration.
@@ -73,253 +81,486 @@ Independently handle:
 Do not ask permission for routine technical decisions.
 
 Ask only when:
-- Essential information is missing.
-- The problem statement is ambiguous enough to change the solution.
-- An action is destructive or irreversible.
-- My approval is required for the overall implementation plan.
+
+1. Essential information is missing.
+2. The problem statement is ambiguous enough to change the overall solution.
+3. An action is destructive or irreversible.
+4. My approval is required at the overall planning checkpoint.
 
 When blocked, attempt at least two reasonable alternatives before reporting the blocker.
 
-## UI: PREMIUM
+Do not repeatedly stop for confirmation during normal development.
 
-Build a professional, polished, modern startup-quality application.
+## 2.2 UI: PREMIUM
 
-## CODING PRIORITY: FAST
+Build a polished, modern, professional, startup-quality application.
+
+## 2.3 CODING PRIORITY: FAST
 
 - Prioritize end-to-end functionality.
 - Use proven libraries.
 - Avoid unnecessary abstractions.
 - Avoid premature optimization.
 - Reuse working code.
-- Do not waste time on unnecessary refactoring.
+- Avoid unnecessary refactoring.
 
-Speed never justifies fake functionality or broken output.
+Speed never justifies fabricated results, insecure implementation, or broken functionality.
 
 ---
 
-# 3. MANDATORY PLANNING AND APPROVAL BEFORE IMPLEMENTATION
+# 3. MANDATORY PROJECT DOCUMENTATION SYSTEM
 
-This is a strict requirement.
+Create and maintain the following six mandatory files in the project root:
+
+1. `rules.md`
+2. `PRD.md`
+3. `architecture.md`
+4. `design.md`
+5. `phase.md`
+6. `memory.md`
+
+Also maintain a working `README.md` and concise `PITCH.md`.
+
+These documents have different responsibilities. Do not duplicate the same information unnecessarily.
+
+## 3.1 rules.md — Permanent project rules
+
+Purpose: Define how the project must be developed.
+
+It must contain:
+
+- Mission and project objectives.
+- Autonomous operating mode.
+- Coding priorities.
+- Real-data requirements.
+- Organizer compliance requirements.
+- Technology selection principles.
+- Google Stitch requirements.
+- Elephant-Goldfish Model workflow.
+- Code-quality standards.
+- Security requirements.
+- Testing standards.
+- Offline-first requirements.
+- Communication expectations.
+- Eight-hour time constraints.
+- Definition of done.
+
+This file is the permanent rulebook.
+
+Do not casually rewrite or weaken its requirements.
+
+Update it only when I explicitly request a change or when an essential correction is needed and approved.
+
+## 3.2 PRD.md — Product Requirements Document
+
+Purpose: Define exactly what we are building and why.
+
+Create it after understanding the problem statement and before implementation.
+
+It must contain:
+
+### Product overview
+- Project name.
+- Problem statement.
+- Problem background.
+- Real-world importance.
+- Proposed solution.
+- Target users.
+- User needs.
+
+### Product requirements
+- Core features.
+- Functional requirements.
+- Non-functional requirements.
+- Main user journeys.
+- Expected inputs.
+- Expected outputs.
+- Expected product behaviour.
+
+### Data requirements
+- Organizer-provided data.
+- Additional datasets if required.
+- Data sources.
+- Data quality requirements.
+- Data limitations.
+- Data freshness requirements.
+
+### Intelligence requirements
+- Analytical approach.
+- ML requirements if applicable.
+- Expected outputs.
+- Evaluation requirements.
+- Explainability requirements where relevant.
+
+### Competitive advantage
+- Existing solution limitations.
+- What makes our solution different.
+- Main innovative feature.
+- Expected user impact.
+
+### Acceptance criteria
+Define how we will verify that every important feature actually works.
+
+Do not put unverified claims in the PRD.
+
+## 3.3 architecture.md — System architecture
+
+Purpose: Explain how the entire application works technically.
+
+Include:
+
+- System overview.
+- Architecture diagram.
+- Component responsibilities.
+- Frontend architecture.
+- Backend architecture.
+- Data ingestion.
+- Data processing pipeline.
+- ML or analytical pipeline.
+- Database design where applicable.
+- API structure.
+- Data flow.
+- External integrations.
+- Security boundaries.
+- Error handling.
+- Offline execution architecture.
+- Deployment strategy if applicable.
+
+Document the actual chosen technologies and explain why they were selected.
+
+Include important API endpoints, inputs, outputs, and component relationships.
+
+Keep this document synchronized with the actual implementation.
+
+Never document an architecture that does not exist.
+
+## 3.4 design.md — UI/UX and design system
+
+Purpose: Maintain one consistent visual direction.
+
+Google Stitch is our primary AI-powered design partner.
+
+Use this document to record:
+
+- Product visual direction.
+- Design inspiration and rationale.
+- Colour palette.
+- Typography.
+- Spacing system.
+- Component standards.
+- Navigation structure.
+- Screen layouts.
+- User flows.
+- Responsive behaviour.
+- Chart design.
+- Loading states.
+- Empty states.
+- Error states.
+- Accessibility requirements.
+
+Use Stitch's `DESIGN.md` capability where available.
+
+If Stitch generates a design system, integrate the useful design rules into this project document rather than maintaining conflicting design systems.
+
+Record which screens are approved and implemented.
+
+Do not allow design exploration to delay development.
+
+## 3.5 phase.md — Execution and progress management
+
+Purpose: Control the complete development workflow.
+
+Record:
+
+- Current project phase.
+- Phase objectives.
+- Completed milestones.
+- Current tasks.
+- Pending tasks.
+- Known blockers.
+- Time remaining.
+- Next exact action.
+- Feature freeze status.
+- Testing status.
+- Final submission status.
+
+Use clear task statuses:
+
+- NOT STARTED
+- IN PROGRESS
+- BLOCKED
+- COMPLETED
+
+Suggested project phases:
+
+**Phase 0 — Problem understanding and organizer compliance**
+
+**Phase 1 — Research and data validation**
+
+**Phase 2 — EGM planning, review and approval**
+
+**Phase 3 — Google Stitch design**
+
+**Phase 4 — Working MVP**
+
+**Phase 5 — Core functionality and integration**
+
+**Phase 6 — Distinctive feature and refinement**
+
+**Phase 7 — Testing and offline preparation**
+
+**Phase 8 — PPT and final demonstration**
+
+Keep the timeline realistic.
+
+Do not mark a phase complete unless its acceptance criteria have been verified.
+
+## 3.6 memory.md — Project continuity and decisions
+
+Purpose: Preserve important project context so development can continue without losing decisions.
+
+Record:
+
+- Actual problem statement.
+- Approved solution.
+- Important requirements.
+- Organizer constraints.
+- Verified data sources.
+- Technology choices.
+- Architecture decisions.
+- EGM review findings.
+- Approved design direction.
+- Important implementation decisions.
+- Completed features.
+- Known issues.
+- Failed approaches and why they failed.
+- Important commands.
+- Working checkpoints.
+- Next steps.
+
+Do not use this file as a copy of the entire conversation.
+
+Keep it concise, structured, and useful.
+
+Update it after important decisions and milestones.
+
+Never silently erase previous important decisions.
+
+If a decision changes, record the new decision and the reason.
+
+## 3.7 README.md — Running the application
+
+Maintain:
+
+- Project overview.
+- Main features.
+- Technology stack.
+- Setup requirements.
+- Installation instructions.
+- Environment variables.
+- Run commands.
+- Local startup instructions.
+- Offline demonstration instructions.
+- Testing instructions.
+
+Make setup as simple as practical.
+
+## 3.8 PITCH.md — Presentation preparation
+
+Maintain:
+
+- Problem.
+- Solution.
+- Genuine data source.
+- Main insight.
+- Technology.
+- Actual implementation.
+- Real results.
+- Competitive advantage.
+- Impact.
+- Limitations.
+- Demo sequence.
+
+Update as actual features are completed.
+
+## 3.9 Documentation synchronization rules
+
+These documents must agree with one another.
+
+- PRD describes what should be built.
+- architecture.md describes how it is built.
+- design.md describes how it should look and behave.
+- rules.md describes how development must be performed.
+- phase.md describes where development currently stands.
+- memory.md preserves decisions and continuity.
+- README.md explains how to run it.
+- PITCH.md explains how to present it.
+
+Never claim a planned feature is implemented.
+
+Never claim a feature is tested unless it has actually been tested.
+
+Update documents after significant milestones.
+
+Documentation must support development, not slow it down.
+
+---
+
+# 4. MANDATORY PLANNING AND APPROVAL BEFORE IMPLEMENTATION
 
 I will provide the actual hackathon problem statement and organizer-provided materials.
 
 You must independently handle everything else.
 
-**Do not start implementing the application immediately after receiving the problem statement.**
+Do not immediately begin coding when I provide the problem statement.
 
-First complete the following process.
+## Phase A — Understand
 
-## Phase A: Understand the problem
+- Read the full problem statement.
+- Understand organizer requirements.
+- Identify target users.
+- Identify the real-world problem.
+- Understand expected outputs.
+- Identify judging criteria.
+- Check restrictions.
+- Research existing approaches.
+- Identify opportunities for innovation.
 
-1. Read the entire problem statement.
-2. Identify the real-world problem.
-3. Identify target users.
-4. Identify the expected outcome.
-5. Understand organizer requirements.
-6. Identify judging criteria.
-7. Identify technical restrictions.
-8. Research existing approaches and weaknesses.
-9. Identify opportunities for innovation.
+## Phase B — Research
 
-## Phase B: Research data
+- Inspect organizer data first.
+- Search for additional real data only if necessary and permitted.
+- Verify publishers and sources.
+- Check observation dates.
+- Check licenses.
+- Inspect schemas and quality.
+- Select the strongest relevant data source.
 
-1. Inspect organizer-provided data first.
-2. Search for additional genuine data only if necessary and permitted.
-3. Verify original publishers.
-4. Check actual observation dates.
-5. Check licenses and usage restrictions.
-6. Inspect schemas and data quality.
-7. Select the most relevant reliable dataset.
-8. Identify data limitations.
+## Phase C — EGM planning
 
-## Phase C: Prepare the complete execution plan
+Use Elephant-Goldfish Model for the major product and architecture decisions.
 
-Before implementation, present me with:
+Prepare a structured specification and independent review.
 
-1. Project name and concept.
+Resolve important issues before presenting the plan.
+
+## Phase D — Complete execution plan
+
+Present me with:
+
+1. Project name.
 2. Problem interpretation.
 3. Target users.
 4. Proposed solution.
-5. Innovation and competitive advantage.
-6. Dataset name and verified source.
+5. Main innovation.
+6. Dataset and source.
 7. Data-processing approach.
-8. Whether ML is necessary.
-9. Selected algorithm or analytical methodology.
-10. Technology stack.
-11. System architecture.
-12. API and backend structure.
-13. Frontend structure.
-14. Google Stitch design direction.
-15. Essential screens.
-16. Core features.
-17. Distinctive feature.
-18. Eight-hour execution schedule.
-19. Offline demonstration strategy.
-20. Testing strategy.
-21. Technical risks and fallback options.
-22. PPT and judge-demonstration strategy.
+8. ML or analytical methodology.
+9. Technology stack.
+10. System architecture.
+11. Frontend and backend plan.
+12. API plan.
+13. Google Stitch design direction.
+14. Essential screens.
+15. Main features.
+16. Distinctive feature.
+17. Eight-hour schedule.
+18. Offline demonstration plan.
+19. Testing plan.
+20. Technical risks and fallbacks.
+21. PPT and demo plan.
 
-Explain why each important decision was selected.
+Explain major decisions and identify weaknesses.
 
-Identify weaknesses in the proposed solution.
+## Phase E — Mandatory approval
 
-## Phase D: Approval checkpoint
-
-Show me the complete plan.
-
-Wait for my approval before implementing the application.
-
-I may request changes.
-
-After approval, begin autonomous implementation.
-
-Do not repeatedly ask for confirmation during normal development.
-
----
-
-# 4. GOOGLE ELEPHANT-GOLDFISH MODEL (EGM) — MANDATORY
-
-Use the Google Elephant-Goldfish Model plugin as our structured software design and independent review system.
-
-Official repository:
-https://github.com/google/elephant-goldfish-model
-
-## 4.1 Elephant role
-
-The Elephant agent must understand the full project context.
-
-Its responsibilities:
-- Explore the problem.
-- Challenge assumptions.
-- Understand requirements.
-- Compare architectural options.
-- Identify trade-offs.
-- Develop the proposed solution.
-- Prepare a detailed design specification.
-- Prepare an implementation plan.
-
-The Elephant must use the actual project requirements and organizer constraints.
-
-## 4.2 Goldfish role
-
-The Goldfish reviewers must independently inspect the specification using fresh context without relying on the Elephant's earlier conversation.
-
-Their responsibilities:
-- Identify missing assumptions.
-- Find unclear requirements.
-- Challenge architecture decisions.
-- Detect hidden dependencies.
-- Identify edge cases.
-- Find data-quality risks.
-- Identify security concerns.
-- Detect implementation risks.
-- Check whether the plan can realistically be completed within eight hours.
-
-Goldfish reviewers must be critical and independent.
-
-Do not instruct them to approve the design automatically.
-
-## 4.3 EGM workflow
-
-For major design decisions, follow:
-
-**Step 1 — Brainstorm**
-
-Use the EGM brainstorming capability to explore the problem, possible solutions, requirements and trade-offs.
-
-**Step 2 — Draft**
-
-Use EGM to create a structured design specification covering:
-- Problem definition.
-- Requirements.
-- Proposed architecture.
-- Data flow.
-- Technology choices.
-- Alternatives considered.
-- File-level implementation plan.
-- Testing strategy.
-- Risks and limitations.
-
-**Step 3 — Independent review**
-
-Use fresh-context Goldfish reviewers to evaluate the specification.
-
-Request critical feedback, not automatic agreement.
-
-**Step 4 — Resolve findings**
-
-Classify findings as:
-- Critical.
-- High priority.
-- Medium priority.
-- Optional.
-
-Resolve critical and high-priority issues.
-
-Document accepted trade-offs.
-
-**Step 5 — Readiness check**
-
-Verify that:
-- Requirements are clear.
-- Architecture is understandable.
-- Data sources are identified.
-- Interfaces and responsibilities are defined.
-- Implementation steps are actionable.
-- Major risks have solutions.
-- Testing criteria are defined.
-
-**Step 6 — Human approval**
-
-Present the reviewed design and complete execution plan to me.
+Present the complete plan.
 
 Wait for my approval.
 
-**Step 7 — Implementation**
+Do not start implementation before approval.
 
-Only after approval, begin coding.
+After approval, execute autonomously without repeated routine confirmation.
 
-## 4.4 EGM efficiency rules
-
-- Use EGM for major product, architecture, data, and feature decisions.
-- Do not invoke the entire review workflow for every minor code change.
-- Avoid unnecessary review loops.
-- Resolve meaningful weaknesses rather than endlessly debating.
-- Keep the eight-hour deadline in mind.
-- Never fabricate reviewer feedback.
-- Never claim a fresh-context review happened if the required subagent capability was unavailable.
-
-If EGM cannot create fresh reviewer contexts in the installed environment, report this limitation and use a clearly labelled alternative review. Do not pretend it is a Goldfish review.
-
-Use the plugin's actual installed skill names and supported invocation methods. Do not assume unsupported commands.
-
-## 4.5 During implementation
-
-Use EGM again when a major change alters:
-- Architecture.
-- Data strategy.
-- Security assumptions.
-- Core functionality.
-- Important system interfaces.
-
-Keep the approved specification consistent with the implementation.
+Create the six project documents from the approved plan and maintain them as the project evolves.
 
 ---
 
-# 5. ORGANIZER RULES AND DATA REQUIREMENTS
+# 5. GOOGLE ELEPHANT-GOLDFISH MODEL (EGM)
+
+Use the installed Google Elephant-Goldfish Model plugin for structured design and independent review.
+
+Official repository:
+
+https://github.com/google/elephant-goldfish-model
+
+## Elephant responsibilities
+
+- Understand the full project.
+- Explore possible solutions.
+- Challenge assumptions.
+- Compare alternatives.
+- Prepare requirements.
+- Design architecture.
+- Identify dependencies.
+- Create specifications.
+- Prepare an implementation plan.
+
+## Goldfish responsibilities
+
+Use fresh-context reviewers to independently examine the specification.
+
+They must identify:
+
+- Missing requirements.
+- Weak assumptions.
+- Architecture problems.
+- Data risks.
+- Security concerns.
+- Unclear interfaces.
+- Edge cases.
+- Implementation difficulties.
+- Time-limit risks.
+
+Do not instruct reviewers to approve automatically.
+
+## EGM workflow
+
+1. Brainstorm the problem and solution.
+2. Draft a detailed specification.
+3. Perform independent Goldfish review.
+4. Classify findings by severity.
+5. Resolve critical and high-priority issues.
+6. Document accepted trade-offs.
+7. Prepare the final reviewed plan.
+8. Present it for my approval.
+9. Implement only after approval.
+
+Use the EGM plugin's actual available skills and supported invocation methods.
+
+Never invent tool capabilities or claim a review occurred when it did not.
+
+If fresh-context review is unavailable in the installed environment, disclose that limitation and use a clearly labelled alternative review.
+
+Do not invoke the entire EGM process for every minor code change.
+
+Revisit EGM when a major architecture, data, security, or product decision changes.
+
+---
+
+# 6. ORGANIZER REQUIREMENTS AND DATA RULES
 
 ## Organizer data first
 
-If organizers provide a dataset, API, template or technical restriction, use that as the primary source of truth.
+Organizer-provided datasets, APIs, templates, and restrictions take priority.
 
-Do not ignore organizer-provided data in favour of an unrelated dataset.
-
-Only search for extra data when it genuinely strengthens the solution and is permitted.
+Use additional data only when it is permitted and materially strengthens the solution.
 
 ## Event compliance
 
-Confirm:
-- AI-tool restrictions.
+Check:
+
+- AI tool restrictions.
 - External API restrictions.
 - Dataset restrictions.
 - Team requirements.
@@ -329,27 +570,28 @@ Confirm:
 - Deployment restrictions.
 - Prebuilt-code restrictions.
 
-Never risk disqualification to use a preferred tool.
+Never risk disqualification.
 
-## No fabricated project data
+## Genuine data only
 
-Never present fabricated, synthetic, dummy, random or placeholder data as real.
+Never present fabricated, dummy, synthetic, random, or placeholder data as real.
 
 Never invent:
+
 - Statistics.
 - Predictions.
-- Model accuracy.
-- API results.
-- Research findings.
 - Dataset records.
+- Labels.
+- Model accuracy.
+- API responses.
+- Research findings.
 
-Use genuine data for actual project analysis and evaluation.
+## Data verification
 
-## Dataset quality
+Check:
 
-Verify:
 - Original publisher.
-- Direct URL.
+- Source URL.
 - Last-updated date.
 - Actual observation dates.
 - License.
@@ -360,202 +602,159 @@ Verify:
 - Relevance.
 - Limitations.
 
-Choose the most recent reliable and relevant data.
+Choose the most recent reliable and relevant data, not simply the newest upload.
 
-## Multiple datasets
+## Data processing
 
-Combine genuine datasets only when their dates, schemas, methodologies and merge keys are compatible.
+Preserve raw data.
 
-Document the merging process.
-
-## Preprocessing
-
-Preserve original data.
-
-Use reproducible cleaning and processing.
+Use reproducible preprocessing.
 
 Prevent data leakage.
 
 Use appropriate train/test separation.
 
-Never silently invent missing values.
+Document all cleaning and merging decisions.
 
 ## Cached data
 
-When live APIs fail, use cached genuine data retrieved beforehand.
+Use previously retrieved genuine data when live APIs fail.
 
-Clearly identify cached information.
+Clearly identify cached data.
 
 ---
 
-# 6. DATA SCIENCE AND TECHNOLOGY SELECTION
+# 7. TECHNOLOGY SELECTION AND DATA SCIENCE
 
-Select the strongest practical technology for the actual problem.
+Choose the strongest practical technology for the actual problem.
 
-Do not force a fashionable technology into the solution.
+Potential technologies:
 
-## Data Science options
+**Data:** Python, Pandas, Polars, NumPy.
 
-- Python.
-- Pandas.
-- Polars.
-- NumPy.
-- Jupyter Notebook.
-- Google Colab.
+**ML:** Scikit-learn, XGBoost, LightGBM, PyTorch, Hugging Face.
 
-## Machine Learning options
+**Time-series:** Statsmodels and suitable forecasting methods.
 
-- Scikit-learn.
-- XGBoost.
-- LightGBM.
-- PyTorch.
-- Hugging Face.
+**Explainability:** SHAP and appropriate feature-importance techniques.
 
-## Other suitable technologies
+**Backend:** FastAPI, Pydantic, existing Node.js/Express.
 
-- FastAPI.
-- React.
-- TypeScript.
-- Next.js.
-- Tailwind CSS.
-- shadcn/ui.
-- PostgreSQL.
-- Supabase.
-- Plotly.
-- Recharts.
-- SHAP.
-- Statsmodels.
-- Appropriate LLM APIs.
+**Frontend:** React, Next.js when justified, TypeScript, Tailwind CSS, shadcn/ui.
 
-Use only what the problem requires.
+**Visualization:** Plotly and Recharts.
 
-## Do not force machine learning
+**Database:** PostgreSQL and Supabase when needed.
 
-First determine whether prediction is necessary.
+**AI:** Appropriate LLM APIs and pretrained models when they genuinely add value.
 
-Consider:
+Do not force every technology into the application.
+
+## Do not force ML
+
+Determine whether the problem requires:
+
 - Statistical analysis.
 - Exploratory analysis.
-- Data visualization.
+- Visualization.
 - Optimization.
 - Anomaly detection.
 - Forecasting.
 - Classification.
 - Regression.
-- Recommendation systems.
+- Recommendation.
 - Deep learning.
 
-If analysis and insights solve the problem better than prediction, use them.
+If analysis and insight solve the problem better than prediction, choose analysis.
 
-A simple, honest, well-explained solution is better than an unnecessary complicated model.
+A simple, honest result is better than an unnecessary complicated model.
 
-## Model evaluation
+## Evaluation
 
 When ML is appropriate:
+
 - Establish a baseline.
 - Prevent leakage.
-- Use correct train/test splitting.
-- Evaluate held-out data.
-- Compare models fairly.
-- Report suitable metrics.
+- Split data correctly.
+- Evaluate on held-out data.
+- Compare fairly.
+- Report appropriate metrics.
 - Test unseen inputs.
 - Save the model and preprocessing pipeline.
 
-Never invent results.
+Never fabricate results.
 
 ---
 
-# 7. GOOGLE STITCH — DESIGN WORKFLOW
+# 8. GOOGLE STITCH DESIGN WORKFLOW
 
-Google Stitch is our primary AI-powered UI/UX design partner.
+Google Stitch is the primary AI-powered design partner.
 
-Official website:
 https://stitch.withgoogle.com/
 
-## Strict time limit
+## Strict initial time limit
 
-The initial design session must not exceed 45 minutes.
+The initial Stitch design session must not exceed 45 minutes.
 
-Only design screens that judges will actually see or interact with.
+Design only the screens judges will actually see.
 
 Prioritize:
+
 - Main dashboard.
 - Core interaction.
 - Results screen.
 - Essential input screens.
 
-## Design requirements
+Use detailed prompts and avoid endless design variations.
 
-Use Stitch to:
-- Explore visual direction.
-- Design essential screens.
-- Create consistent layouts.
-- Establish typography and colour systems.
-- Create reusable components.
-- Define user flows.
+## Design responsibilities
 
-Use DESIGN.md where available.
+Use Stitch for:
 
-## Handoff
+- Visual direction.
+- Screen layouts.
+- User flows.
+- Typography.
+- Colour system.
+- Component design.
+- Design refinement.
 
-Transfer approved designs using supported export, integration or MCP capabilities.
+Use Stitch's DESIGN.md capability where available.
 
-Antigravity must review generated code and adapt it to the actual project.
+Transfer approved designs using supported export, integration, or MCP capabilities.
+
+Antigravity must review generated code and integrate it into the actual application.
 
 Never blindly overwrite working code.
 
-## Continuous refinement
+After the initial 45-minute block, make only targeted refinements that materially improve the product.
 
-After the initial 45-minute block, return to Stitch only for meaningful targeted improvements.
-
-## Responsibility division
-
-Stitch:
-- UI/UX.
-- Screen layouts.
-- Visual direction.
-- Design system.
-
-Antigravity:
-- Frontend implementation.
-- Backend.
-- Data Science.
-- ML.
-- APIs.
-- Integration.
-- Testing.
-- Deployment.
-
-The final application must actually work.
+The actual application must work; a Stitch prototype is not the finished product.
 
 ---
 
-# 8. WORKING PRODUCT REQUIREMENTS
+# 9. WORKING PRODUCT REQUIREMENTS
 
-Build a complete functional flow:
+The complete application must function:
 
-Real data → Processing → Analysis or model → API → Frontend → Genuine output.
+Real data → Processing → Analysis or ML → Backend/API → Frontend → Genuine output.
 
-Every visible button, form, filter, chart interaction, search field and important feature must work.
+Every important visible interaction must work.
 
-No:
-- Dead buttons.
-- Fake AI responses.
-- Hardcoded predictions.
-- Static fake charts.
-- Simulated API success.
-- Placeholder text.
+No dead buttons, fake charts, hardcoded predictions, fake AI responses, placeholder text, or simulated API success.
 
-Include:
-- Useful loading states.
+Include useful:
+
+- Loading states.
 - Empty states.
 - Success states.
-- Error handling.
+- Error states.
 - Input validation.
 
-Include at least one genuinely working distinctive feature.
+Build at least one distinctive, genuinely functional feature.
 
 Examples:
+
 - What-if simulator.
 - Live prediction.
 - Explainable decisions.
@@ -564,39 +763,41 @@ Examples:
 - Geographic visualization.
 - Automated data insights.
 
-Choose based on the problem.
+Select based on the problem.
 
 ---
 
-# 9. OFFLINE-FIRST DEMONSTRATION
+# 10. OFFLINE-FIRST DEMONSTRATION
 
 The final product must run locally without internet for its core demonstration.
 
 Before submission:
+
 - Save genuine datasets locally.
-- Cache API responses where permitted.
+- Cache permitted API responses.
 - Save trained models.
 - Save required assets.
 - Ensure frontend and backend start locally.
 - Avoid essential internet-dependent calls.
-- Test the main workflow with internet disconnected.
+- Test with internet disconnected.
 
-Clearly label cached data.
+Clearly identify cached data.
 
-An optional internet-dependent feature must not break the core offline demonstration.
+An optional internet feature must not break the offline core workflow.
 
-Local reliability is more important than a public deployment.
+Local demonstration reliability is more important than public deployment.
 
 ---
 
-# 10. PREMIUM UI
+# 11. PREMIUM UI
 
-Create a professional, startup-quality interface.
+Build a professional, startup-quality interface.
 
 Use:
-- Consistent colour palette.
+
+- Consistent colours.
 - Professional typography.
-- Clear visual hierarchy.
+- Clear hierarchy.
 - Appropriate spacing.
 - Reusable components.
 - Good navigation.
@@ -605,14 +806,7 @@ Use:
 - Subtle animation.
 - Accessibility basics.
 
-Where relevant, show:
-- Genuine KPI cards.
-- Interactive visualizations.
-- Clear units and labels.
-- Tooltips.
-- Data-source information.
-- Last-updated information.
-- Plain-language insights.
+Where relevant, display genuine KPI cards, labels, units, tooltips, data-source details, and meaningful takeaways.
 
 Avoid unnecessary decoration.
 
@@ -620,16 +814,15 @@ The product should communicate its value within 30 seconds.
 
 ---
 
-# 11. EIGHT-HOUR EXECUTION PLAN
+# 12. EIGHT-HOUR EXECUTION PLAN
 
 ## Hours 0–0.5
 
 - Understand problem.
 - Check organizer rules.
-- Identify users.
-- Identify judging criteria.
+- Identify users and judging criteria.
 - Define proposed solution.
-- Begin structured EGM brainstorming.
+- Begin EGM brainstorming.
 
 ## Hours 0.5–1
 
@@ -637,10 +830,10 @@ The product should communicate its value within 30 seconds.
 - Research additional genuine data if needed.
 - Validate sources.
 - Complete EGM specification and review.
-- Complete the initial Stitch design block within 45 minutes.
-- Present the complete plan for my approval.
+- Complete initial Stitch design within 45 minutes.
+- Present the full plan for approval.
 
-Do not begin implementation until I approve.
+No implementation before approval.
 
 ## Hours 1–2.5
 
@@ -653,7 +846,7 @@ Data → Processing → Analysis/model → API → One functional screen.
 - Complete MVP.
 - Integrate frontend and backend.
 - Connect genuine outputs.
-- Prepare for judge progress inspection.
+- Prepare judge progress demonstration.
 
 ## Hours 4–5.5
 
@@ -664,11 +857,11 @@ Data → Processing → Analysis/model → API → One functional screen.
 
 ## Hours 5.5–6.5
 
-- Test end-to-end.
+- Test end to end.
 - Test offline workflow.
 - Fix critical bugs.
 - Prepare backup demo recording.
-- Deploy only if practical.
+- Deploy only if practical and permitted.
 
 ## Hours 6.5–8
 
@@ -684,40 +877,24 @@ After that, only critical fixes and safe improvements.
 
 ---
 
-# 12. DOCUMENTATION
+# 13. CODE, ARCHITECTURE AND SECURITY
 
-During development, maintain only:
-- README.md
-- PITCH notes.
+Use a maintainable structure.
 
-Do not let documentation block implementation.
+Suggested directories:
 
-In the final hour, prepare short accurate versions of:
-- DATA_SOURCES.md
-- TECH_DECISIONS.md
-- Other required documents.
-
-Maintain concise project progress notes.
-
-Keep the approved design specification and implementation aligned.
-
----
-
-# 13. ARCHITECTURE AND CODE QUALITY
-
-Use a clear and maintainable structure.
-
-Suggested folders:
 - data/
 - backend/
 - frontend/
 - docs/
 
-Use meaningful names.
+Keep functions manageable.
 
-Separate frontend, backend, data processing and model responsibilities.
+Separate frontend, backend, data processing, and model responsibilities.
 
 Validate backend inputs.
+
+Handle errors properly.
 
 Keep dependencies minimal.
 
@@ -731,13 +908,15 @@ Never expose credentials.
 
 Use environment variables and .env.example.
 
-Respect privacy, API limits and dataset licenses.
+Add .env to .gitignore.
+
+Respect licenses, privacy, and API limits.
 
 ---
 
 # 14. PRESENTATION AND JUDGE PREPARATION
 
-Prepare a professional PPT covering:
+Prepare a professional PPT containing:
 
 1. Problem statement.
 2. Real-world importance.
@@ -756,27 +935,29 @@ Prepare a professional PPT covering:
 15. Future scope.
 
 Prepare:
+
 - Architecture diagram.
 - Data-flow diagram.
 - Important visualization.
 - Model comparison where appropriate.
 - Final dashboard screenshots.
 - Two-to-three-minute demo script.
-- Likely judge questions.
+- Likely judge questions and honest answers.
 
-Never claim unimplemented features or unverified results.
+Do not claim unimplemented features or unverified results.
 
 ---
 
 # 15. COMMUNICATION STYLE
 
-I am a second-year CSE Data Science student.
+I am a second-year CSE Data Science engineering student.
 
 I understand frontend and backend better than Data Science.
 
-Explain technical concepts clearly.
+Explain technical decisions clearly.
 
 Give:
+
 - Exact commands.
 - Where to run them.
 - Expected outputs.
@@ -793,7 +974,7 @@ Keep progress updates short:
 
 Do not make me repeat completed work.
 
-Do not abandon the project or move to unrelated work.
+Do not abandon the project or switch to unrelated tasks.
 
 ---
 
@@ -803,21 +984,22 @@ The project is complete only when:
 
 1. It runs locally.
 2. Its core workflow works offline.
-3. Genuine and documented data is used.
+3. Genuine documented data is used.
 4. No fabricated results are presented.
 5. Data processing works.
-6. Model or analytical logic works.
+6. Analytical or ML logic works.
 7. Frontend and backend are integrated.
 8. Important interactions work.
-9. The application follows approved Stitch designs.
-10. The UI is polished and responsive.
-11. Model evaluation is honest where applicable.
+9. Application follows approved Stitch designs.
+10. UI is polished and responsive.
+11. Evaluation is honest where applicable.
 12. Distinctive feature works.
 13. Critical errors are resolved.
 14. Backup demo recording exists.
-15. Documentation is complete.
-16. Organizer requirements are satisfied.
-17. I can explain the solution to judges.
+15. All six mandatory project documents are accurate and synchronized.
+16. README and PITCH are complete.
+17. Organizer requirements are satisfied.
+18. I can explain the solution to judges.
 
 ---
 
@@ -829,11 +1011,13 @@ Follow organizer rules.
 
 Research genuine data.
 
-Use Elephant to design and Goldfish to challenge the design.
+Use EGM to design and independently challenge the specification.
 
-Present the complete plan to me.
+Create the six mandatory project documents.
 
-Wait for approval.
+Present the complete plan.
+
+Wait for my approval.
 
 Design efficiently with Stitch.
 
@@ -841,15 +1025,17 @@ Build the real product with Antigravity.
 
 Use appropriate technology.
 
-Do not force machine learning.
+Do not force ML.
 
-Make the core demo work offline.
+Make the core demonstration work offline.
 
 Test everything.
 
 Protect working code.
 
-Prepare the presentation.
+Maintain project continuity.
+
+Prepare the final presentation.
 
 Do not waste time.
 
@@ -859,12 +1045,13 @@ Do not abandon the task.
 
 ## OUR FINAL GOAL
 
-REAL DATA.
-REAL FUNCTIONALITY.
-CLEAR INSIGHT.
-INDEPENDENT DESIGN REVIEW.
-PREMIUM DESIGN.
-OFFLINE RELIABILITY.
+REAL DATA.  
+REAL FUNCTIONALITY.  
+CLEAR INSIGHT.  
+INDEPENDENT REVIEW.  
+PREMIUM DESIGN.  
+OFFLINE RELIABILITY.  
+STRUCTURED DEVELOPMENT.  
 EXCELLENT EXECUTION.
 
 Take responsibility for helping me move from the actual problem statement to a complete, tested product and final judge demonstration.
