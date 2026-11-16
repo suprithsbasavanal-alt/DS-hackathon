@@ -6,14 +6,31 @@ and data-transparency ledgers.
 """
 
 import os
+import sys
+from pathlib import Path
 import json
 from typing import Dict, List, Any, Optional
+
+# Ensure parent directory is in sys.path so 'backend.xyz' imports resolve regardless of cwd
+_PARENT_DIR = str(Path(__file__).resolve().parent.parent)
+if _PARENT_DIR not in sys.path:
+    sys.path.insert(0, _PARENT_DIR)
+
+_CURRENT_DIR = str(Path(__file__).resolve().parent)
+if _CURRENT_DIR not in sys.path:
+    sys.path.insert(0, _CURRENT_DIR)
+
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-PROCESSED_DIR = os.path.join(BASE_DIR, "data", "processed")
+_candidates = [
+    os.path.join(BASE_DIR, "data", "processed"),
+    os.path.join(os.path.dirname(__file__), "data", "processed"),
+    os.path.join(os.getcwd(), "data", "processed"),
+]
+PROCESSED_DIR = next((p for p in _candidates if os.path.exists(p)), _candidates[0])
 FRONTEND_DIST = os.path.join(BASE_DIR, "frontend", "dist")
 
 app = FastAPI(

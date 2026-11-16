@@ -120,7 +120,7 @@ export const App: React.FC = () => {
               {error}
             </p>
             <p className="text-xs text-red-700">
-              Please ensure the FastAPI backend is running on <code>http://localhost:8000</code>.
+              Please ensure the FastAPI backend service is running and reachable.
             </p>
             <button
               onClick={loadAllData}
