@@ -1,80 +1,130 @@
-# Project Phase & Execution Tracker (`phase.md`)
+# BreatheWise --- Execution Phase Tracker
 
-**Current Phase:** Phase 0 — Problem Understanding & Organizer Compliance  
-**Current Status:** IN PROGRESS (Awaiting Problem Statement)  
-**Time Remaining:** 8.0 Hours  
-**Feature Freeze Status:** NOT ACTIVE (Enforced at Hour 6.0)  
-**Testing Status:** NOT STARTED  
-**Final Submission Status:** NOT STARTED  
-**Known Blockers:** None  
-**Next Exact Action:** Receive problem statement from user; begin Phase 0 analysis & Phase 1 data research.
+**Hackathon plan:** 8 hours\
+**Current state:** Pre-implementation gates\
+**Project approval:** Approved by Suprith\
+**Implementation:** NOT STARTED
 
----
+## Status legend
 
-## Phase Matrix
+-   NOT STARTED
+-   IN PROGRESS
+-   BLOCKED
+-   COMPLETED
 
-| Phase | Description | Status | Target Window | Key Deliverable |
-| :--- | :--- | :--- | :--- | :--- |
-| **Phase 0** | Problem Understanding & Organizer Compliance | **IN PROGRESS** | Hour 0.0 – 0.25 | 1-Sentence Goal, Target User, Constraints |
-| **Phase 1** | Research & Data Validation | NOT STARTED | Hour 0.25 – 0.5 | Sourced Real Dataset, Clean Schema, EDA |
-| **Phase 2** | EGM Planning, Review & Approval | NOT STARTED | Hour 0.5 – 1.0 | Specification, Goldfish Review, 22-Pt Plan Approved |
-| **Phase 3** | Google Stitch Design | NOT STARTED | Hour 0.5 – 1.0 (45m max) | Stitch Screens & `design.md` Tokens |
-| **Phase 4** | Working MVP (Thin Vertical Slice) | NOT STARTED | Hour 1.0 – 2.5 | Real Data ➔ Model ➔ API ➔ One Screen Working |
-| **Phase 5** | Core Functionality & Integration | NOT STARTED | Hour 2.5 – 4.0 | Full Dashboard, End-to-End API Integration |
-| **Phase 6** | Distinctive Feature & Refinement | NOT STARTED | Hour 4.0 – 5.5 | What-If Simulator / SHAP Explainability Polish |
-| **Phase 7** | Testing & Offline Preparation | NOT STARTED | Hour 5.5 – 6.5 | Offline Test, Bug Hardening, Backup Video |
-| **Phase 8** | PPT & Final Demonstration | NOT STARTED | Hour 6.5 – 8.0 | Slide Deck, 2-3 Min Click Path, Judge Q&A Prep |
+Only mark a task COMPLETED after checking its acceptance evidence.
 
----
+## Phase 0 --- Organizer compliance
 
-## Detailed Task Breakdown
+**Status:** IN PROGRESS
 
-### Phase 0: Problem Understanding & Organizer Compliance
-- [ ] Read full problem statement and organizer rubrics [NOT STARTED]
-- [ ] Identify target users and primary pain point [NOT STARTED]
-- [ ] Verify technical restrictions and allowed toolchains [NOT STARTED]
+Reported by team: - AI tools allowed. - External APIs allowed. -
+Datasets allowed. - Prebuilt code allowed. - External development tools
+allowed. - Team maximum: four. - Active builders: Suprith and Uday.
 
-### Phase 1: Research & Data Validation
-- [ ] Inspect organizer-provided data first [NOT STARTED]
-- [ ] Sourcing & license verification for genuine data in `data/` [NOT STARTED]
-- [ ] Perform reproducible EDA and baseline statistics [NOT STARTED]
+Still confirm: - Submission format and deadline. - Judging criteria. -
+Demo/presentation duration. - Deployment requirement. -
+Repository/submission rules. - Team registration and contribution rules.
 
-### Phase 2: EGM Planning, Review & Approval
-- [ ] EGM Step 1: Elephant Brainstorming [NOT STARTED]
-- [ ] EGM Step 2: Draft technical specification [NOT STARTED]
-- [ ] EGM Step 3: Independent Goldfish subagent reviews [NOT STARTED]
-- [ ] EGM Step 4 & 5: Resolve findings and verify readiness [NOT STARTED]
-- [ ] Present 22-point plan to user; obtain explicit approval [NOT STARTED]
+## Phase 1 --- Data research and verification
 
-### Phase 3: Google Stitch Design
-- [ ] Formulate context-rich prompts for Stitch [NOT STARTED]
-- [ ] Generate dashboard and scenario screen layouts [NOT STARTED]
-- [ ] Lock visual tokens into `design.md` within 45 minutes [NOT STARTED]
+**Status:** IN PROGRESS
 
-### Phase 4: Working MVP
-- [ ] Build baseline model with honest train/test split [NOT STARTED]
-- [ ] Create FastAPI backend with `/api/health` and `/api/predict` [NOT STARTED]
-- [ ] Create minimal frontend showing real prediction output [NOT STARTED]
-- [ ] Verify end-to-end local operation [NOT STARTED]
+Candidates: - Peenya CPCB 15-minute 2024--25 CSV via OpenCity. - OpenAQ
+Jayanagar 5th Block historical station. - Open-Meteo historical weather,
+if needed.
 
-### Phase 5: Core Functionality & Integration
-- [ ] Expand frontend to full dashboard with KPI cards and charts [NOT STARTED]
-- [ ] Connect all filters, inputs, and controls to backend [NOT STARTED]
-- [ ] Compare candidate champion model against baseline [NOT STARTED]
+Pending: - Download actual CSV. - Inspect row count and real date
+coverage. - Inspect all actual columns and dtypes. - Validate
+timestamps/time zone and sampling intervals. - Calculate missingness and
+duplicates. - Check invalid/outlier/flatline values. - Verify units and
+station. - Confirm source attribution/licence. - Decide whether the
+dataset supports a valid PM2.5 forecast.
 
-### Phase 6: Distinctive Feature & Refinement
-- [ ] Implement distinctive "wow" feature (What-If Simulator) [NOT STARTED]
-- [ ] Integrate SHAP explainability engine [NOT STARTED]
-- [ ] Enforce Feature Freeze at Hour 6.0 [NOT STARTED]
+Do not begin model training before this phase is complete.
 
-### Phase 7: Testing & Offline Preparation
-- [ ] Disconnect internet and verify core journey works offline [NOT STARTED]
-- [ ] Test edge cases, empty states, and input validation [NOT STARTED]
-- [ ] Create single-command runner script (`run.sh`) [NOT STARTED]
-- [ ] Record backup demo walkthrough [NOT STARTED]
+## Phase 2 --- Final specification and review
 
-### Phase 8: PPT & Final Demonstration
-- [ ] Complete slide deck covering problem, data, model, results, impact [NOT STARTED]
-- [ ] Rehearse 2-3 minute timed live demo script [NOT STARTED]
-- [ ] Review judge defense Q&A sheet [NOT STARTED]
-- [ ] Final synchronization of all 6 mandatory documents [NOT STARTED]
+**Status:** IN PROGRESS
+
+-   PRD drafted.
+-   Architecture drafted.
+-   Design specification drafted.
+-   Permanent rules drafted.
+-   Independent EGM review not performed; capability not
+    available/verified in current assistant tools.
+-   Transparent manual technical review performed in conversation; this
+    is not an EGM review.
+-   Final implementation approval remains conditional on data and
+    compliance gates.
+
+## Phase 3 --- Stitch design
+
+**Status:** NOT STARTED
+
+-   Overview screen.
+-   Explorer screen.
+-   Forecast screen.
+-   Weather Relationships.
+-   Insights.
+-   Final design system and responsive rules.
+
+## Phase 4 --- MVP vertical slice
+
+**Status:** NOT STARTED
+
+Acceptance: - Real data loads. - One end-to-end analysis is visible in
+UI. - Source/time/unit labels are correct. - Core workflow runs locally.
+
+## Phase 5 --- Core integration
+
+**Status:** NOT STARTED
+
+-   Explorer filters work.
+-   Weather relationship chart works.
+-   Summary statistics are reproducible.
+-   Backend/frontend integration passes.
+
+## Phase 6 --- Distinctive feature and polish
+
+**Status:** NOT STARTED
+
+-   Forecast and explanation only if data/model passes.
+-   Anomaly detection with documented method.
+-   Pollution Pattern Explainer based on actual evidence.
+-   UI polish.
+
+## Phase 7 --- Testing and offline readiness
+
+**Status:** NOT STARTED
+
+-   Test core workflow with network disabled.
+-   Test missing data and invalid filters.
+-   Test API failure and cache fallback.
+-   Check charts and timestamps.
+-   Resolve critical bugs.
+-   Save backup demo recording.
+
+## Phase 8 --- Presentation and submission
+
+**Status:** NOT STARTED
+
+-   README complete.
+-   PITCH complete.
+-   Slides complete.
+-   Architecture/data-flow diagram.
+-   Honest metrics and limitations.
+-   Demo click-path rehearsed.
+-   Submission package checked.
+
+## Current blockers
+
+1.  Actual dataset file not yet uploaded/inspected.
+2.  Remaining organizer submission/judging details unknown.
+3.  Forecast horizon and model cannot be locked until data inspection.
+
+## Next action
+
+Obtain the actual Peenya CSV (or retrieve OpenAQ data) and inspect it.
+Ask organizers/teacher for submission format and judging criteria. Keep
+implementation paused until the data gate is satisfied.

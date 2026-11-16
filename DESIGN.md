@@ -1,50 +1,134 @@
-# UI/UX & Design System (`design.md`)
+# BreatheWise --- Product Design Specification
 
-*Single Source of Truth for Visual Direction, Google Stitch Integration, and Component Tokens*
+**Design status:** Direction approved; final screens to be generated in
+Google Stitch and implemented after data gate.
 
----
+## 1. Product identity
 
-## 1. Product Visual Direction
-- **Brand Aesthetic:** Professional, startup-grade, data-dense yet clean and accessible.
-- **Tone:** Authoritative, scientific, trustworthy, and modern.
-- **Theme:** Dark mode default with crisp high-contrast elements (slate/zinc palette).
+**Name:** BreatheWise\
+**Descriptor:** Air Quality & Weather Intelligence\
+**Tone:** Trustworthy, calm, analytical, modern, accessible.
 
----
+The interface should feel like a professional environmental intelligence
+product---not a generic admin template.
 
-## 2. Color System & Tokens
-- **Canvas / Background:** Deep Slate (`bg-slate-950` / `#020617`, secondary `bg-slate-900` / `#0f172a`)
-- **Card Surfaces:** Elevated cards with 1px border (`bg-slate-900/70`, `border-slate-800`, backdrop-blur)
-- **Primary Brand Accent:** Electric Blue / Indigo (`#3b82f6` / `#6366f1`) for core CTAs and primary metrics
-- **Insight / Positive Accent:** Emerald Green (`#10b981`) for positive trends, high confidence, safe states
-- **Warning / Alert Accent:** Amber / Rose (`#f59e0b` / `#f43f5e`) for critical thresholds, high risk, anomalies
-- **Typography Colors:** `#f8fafc` (headers/primary), `#94a3b8` (body/labels), `#64748b` (subtle captions)
+## 2. Design goals
 
----
+-   Make the current/most recent available air-quality state
+    understandable within 30 seconds.
+-   Make source, timestamp, location, units, and observed/forecast
+    status obvious.
+-   Give charts enough room to be read.
+-   Avoid alarmist colours or unsupported health claims.
+-   Make the interface responsive and accessible.
 
-## 3. Typography & Spacing
-- **Font Family:** Inter / Geist Sans (sans-serif)
-- **Scale:**
-  - Page Title: `text-2xl md:text-3xl font-bold tracking-tight`
-  - Section Header: `text-lg font-semibold text-slate-100`
-  - KPI Stat: `text-3xl font-extrabold font-mono tracking-tight`
-  - Labels & Body: `text-sm text-slate-400`
-  - Tooltips & Badges: `text-xs font-medium`
+## 3. Visual direction
 
----
+Suggested direction: - Dark navy/charcoal foundation or a restrained
+light dashboard; choose one consistent theme in Stitch. - Teal/cyan as
+primary accent. - Use amber/orange/red only for meaningful AQI/pollution
+status categories, based on valid category values. - Typography:
+readable modern sans-serif. - Use consistent spacing, card radius, chart
+grid, icon style, and button hierarchy. - Do not use colour alone to
+communicate severity; include labels.
 
-## 4. Screen Layouts & Component Standards
-1. **Header Navigation:** App title, status badge ("Offline-Ready / Verified Data"), live clock, quick reset.
-2. **Top KPI Strip:** 4 cards highlighting key numbers directly from the real dataset.
-3. **Core Interactive Zone:**
-   - Left: Parameter controls / scenario sliders.
-   - Right: Live prediction gauge, confidence meter, and SHAP feature attribution bar chart.
-4. **Data Visualization Hub:** High-contrast Recharts/Plotly charts with plain-language takeaway under each chart.
-5. **Trust & Provenance Drawer:** Dataset citation, observation dates, row counts, and data license.
+Exact hex values and typography should be finalized in Stitch and
+recorded here after design approval.
 
----
+## 4. Navigation
 
-## 5. Google Stitch Integration
-- Official tool: [https://stitch.withgoogle.com/](https://stitch.withgoogle.com/)
-- Initial design timebox: **Strict 45-minute cap**.
-- Focus: Dashboard, scenario simulator, results screen, input panel.
-- Handoff: Adapt Stitch design tokens and screen layouts into modular React/Tailwind components.
+1.  Overview
+2.  Air Quality Explorer
+3.  Weather Relationships
+4.  Forecast & Explanation
+5.  Insights
+
+Keep navigation shallow. The user should always know the selected
+station and data period.
+
+## 5. Required screens
+
+### Screen A --- Overview
+
+-   Product name and selected station.
+-   Latest available observation (not falsely labelled live).
+-   Timestamp and source.
+-   Pollutant summary cards with units.
+-   Historical trend preview.
+-   Data freshness indicator.
+-   Clear navigation to detailed explorer.
+
+### Screen B --- Air Quality Explorer
+
+-   Pollutant selector.
+-   Date range selector.
+-   Time-series chart.
+-   Summary statistics.
+-   Data-quality/missingness note.
+-   Clear units and aggregation period.
+
+### Screen C --- Weather Relationships
+
+-   Select pollutant and weather variable.
+-   Scatter plot with correlation statistic.
+-   Optional time-aligned comparison.
+-   Explain that correlation does not establish causation.
+-   Show sample count and period.
+
+### Screen D --- Forecast & Explanation
+
+-   Forecast chart with actual history and future segment visually
+    distinguished.
+-   Forecast horizon and generated-at timestamp.
+-   Prediction units.
+-   Uncertainty interval if supportable.
+-   Model name and honest held-out metrics.
+-   Feature importance or explanation.
+-   Warning if model is unavailable or not better than baseline.
+
+### Screen E --- Insights
+
+-   Anomaly list with timestamps and measured values.
+-   Method/threshold used.
+-   Explanation of why flagged.
+-   Cautious advisory text, not medical guidance.
+-   Data source and caveats.
+
+## 6. Interaction requirements
+
+-   Filters update actual charts/data.
+-   Navigation works.
+-   Tooltips show exact time/value/unit.
+-   Reset filters works.
+-   Empty date ranges show an empty state.
+-   API errors show retry/fallback state.
+-   No dead buttons or simulated success.
+-   Loading states should not flash misleading values.
+
+## 7. Accessibility and responsive behaviour
+
+-   Adequate text contrast.
+-   Keyboard accessible controls.
+-   Visible focus states.
+-   Chart colours distinguishable and accompanied by labels.
+-   Mobile layout stacks cards and charts.
+-   Avoid tiny chart labels and dense legends.
+
+## 8. Stitch workflow
+
+Use https://stitch.withgoogle.com/ 1. Create the Overview screen first.
+2. Generate Explorer and Forecast screens using the same design system.
+3. Generate Weather Relationships and Insights only after core visual
+language is stable. 4. Export/reference design and any DESIGN.md
+generated by Stitch if available. 5. Antigravity should review generated
+code and adapt it to the real data/API. 6. Do not regenerate entire
+screens for minor styling changes. 7. Limit initial design exploration
+to 45 minutes.
+
+## 9. UI truth requirements
+
+-   Distinguish observed, reanalysis, model estimate, and forecast.
+-   Never show fabricated sample charts in the real demo.
+-   If sample placeholders are used during UI development, label them
+    clearly and remove them before the final demo.
+-   No unsupported AQI, health, or model accuracy claims.
