@@ -41,13 +41,13 @@ def create_deck():
         
         p0 = tf.paragraphs[0]
         p0.text = category.upper()
-        p0.font.size = Pt(10)
+        p0.font.size = Pt(11)
         p0.font.bold = True
         p0.font.color.rgb = COLOR_SKY
         
         p1 = tf.add_paragraph()
         p1.text = title
-        p1.font.size = Pt(24)
+        p1.font.size = Pt(26)
         p1.font.bold = True
         p1.font.color.rgb = COLOR_DARK_SLATE
 
@@ -56,7 +56,7 @@ def create_deck():
         tf = footer_box.text_frame
         p = tf.paragraphs[0]
         p.text = f"BreatheWise • Data Science Hackathon 2026 • Slide {current_slide} of {total_slides} • 100% Offline Demonstration"
-        p.font.size = Pt(9)
+        p.font.size = Pt(9.5)
         p.font.color.rgb = COLOR_MUTED
 
     # -------------------------------------------------------------
@@ -124,13 +124,13 @@ def create_deck():
         tf.word_wrap = True
         p0 = tf.paragraphs[0]
         p0.text = heading
-        p0.font.size = Pt(16)
+        p0.font.size = Pt(17)
         p0.font.bold = True
         p0.font.color.rgb = COLOR_DARK_SLATE
         
         p1 = tf.add_paragraph()
         p1.text = body
-        p1.font.size = Pt(12)
+        p1.font.size = Pt(13.5)
         p1.font.color.rgb = COLOR_MUTED
         p1.space_before = Pt(14)
 
@@ -160,21 +160,21 @@ def create_deck():
         p0 = tf.paragraphs[0]
         p0.text = val
         p0.alignment = PP_ALIGN.CENTER
-        p0.font.size = Pt(22)
+        p0.font.size = Pt(26)
         p0.font.bold = True
         p0.font.color.rgb = COLOR_SKY
         
         p1 = tf.add_paragraph()
         p1.text = lbl
         p1.alignment = PP_ALIGN.CENTER
-        p1.font.size = Pt(10)
+        p1.font.size = Pt(12)
         p1.font.bold = True
         p1.font.color.rgb = COLOR_DARK_SLATE
         
         p2 = tf.add_paragraph()
         p2.text = sub
         p2.alignment = PP_ALIGN.CENTER
-        p2.font.size = Pt(9)
+        p2.font.size = Pt(10.5)
         p2.font.color.rgb = COLOR_MUTED
 
     # Bottom Callout Grid
@@ -189,7 +189,7 @@ def create_deck():
     
     p = tf_bot.paragraphs[0]
     p.text = "Strict Scientific Boundaries & Regulatory Standards Enforced:"
-    p.font.size = Pt(14)
+    p.font.size = Pt(16)
     p.font.bold = True
     p.font.color.rgb = COLOR_DARK_SLATE
 
@@ -202,9 +202,9 @@ def create_deck():
     for b in bullets:
         p_b = tf_bot.add_paragraph()
         p_b.text = f"• {b}"
-        p_b.font.size = Pt(11)
+        p_b.font.size = Pt(13)
         p_b.font.color.rgb = COLOR_MUTED
-        p_b.space_before = Pt(6)
+        p_b.space_before = Pt(8)
 
     # -------------------------------------------------------------
     # SLIDE 4: HISTORICAL ANALYSIS & COMMUTER PATTERNS
@@ -224,7 +224,7 @@ def create_deck():
     tf_l.word_wrap = True
     p = tf_l.paragraphs[0]
     p.text = "24-Hour Diurnal Commute Patterns"
-    p.font.size = Pt(16)
+    p.font.size = Pt(17)
     p.font.bold = True
     p.font.color.rgb = COLOR_DARK_SLATE
     
@@ -237,7 +237,7 @@ def create_deck():
     for f in findings_l:
         p_f = tf_l.add_paragraph()
         p_f.text = f"• {f}"
-        p_f.font.size = Pt(11)
+        p_f.font.size = Pt(13)
         p_f.font.color.rgb = COLOR_MUTED
         p_f.space_before = Pt(10)
 
@@ -252,7 +252,7 @@ def create_deck():
     tf_r.word_wrap = True
     p = tf_r.paragraphs[0]
     p.text = "Retrospective Weather Associations"
-    p.font.size = Pt(16)
+    p.font.size = Pt(17)
     p.font.bold = True
     p.font.color.rgb = COLOR_DARK_SLATE
 
@@ -265,7 +265,7 @@ def create_deck():
     for f in findings_r:
         p_f = tf_r.add_paragraph()
         p_f.text = f"• {f}"
-        p_f.font.size = Pt(11)
+        p_f.font.size = Pt(13)
         p_f.font.color.rgb = COLOR_MUTED
         p_f.space_before = Pt(10)
 
@@ -277,39 +277,39 @@ def create_deck():
     add_footer(slide5, 5)
 
     # Big Alert Box
-    alert_box = slide5.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(0.8), Inches(1.8), Inches(11.7), Inches(1.3))
+    alert_box = slide5.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(0.8), Inches(1.8), Inches(11.7), Inches(1.4))
     alert_box.fill.solid()
     alert_box.fill.fore_color.rgb = RGBColor(254, 243, 199)
     alert_box.line.color.rgb = COLOR_AMBER
     
-    tb_a = slide5.shapes.add_textbox(Inches(1.1), Inches(1.9), Inches(11.1), Inches(1.1))
+    tb_a = slide5.shapes.add_textbox(Inches(1.1), Inches(1.9), Inches(11.1), Inches(1.2))
     tf_a = tb_a.text_frame
     tf_a.word_wrap = True
     p0 = tf_a.paragraphs[0]
     p0.text = "CORE SCIENTIFIC FINDING: PERSISTENCE BASELINE OUTPERFORMS MACHINE LEARNING"
-    p0.font.size = Pt(12)
+    p0.font.size = Pt(13.5)
     p0.font.bold = True
     p0.font.color.rgb = RGBColor(146, 64, 14)
     
     p1 = tf_a.add_paragraph()
     p1.text = "Our evaluation showed that the simple persistence baseline outperformed both machine-learning approaches on the held-out test period. This demonstrates why complex models must be tested against simple baselines before claiming predictive value. Evaluated chronologically across 123 calendar days (Jul 1 – Oct 31, 2024) with zero target-day weather leakage."
-    p1.font.size = Pt(10.5)
+    p1.font.size = Pt(12.5)
     p1.font.color.rgb = RGBColor(120, 53, 15)
     p1.space_before = Pt(4)
 
     # Benchmark Table Box
-    card_tbl = slide5.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(0.8), Inches(3.3), Inches(11.7), Inches(3.4))
+    card_tbl = slide5.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(0.8), Inches(3.4), Inches(11.7), Inches(3.3))
     card_tbl.fill.solid()
     card_tbl.fill.fore_color.rgb = COLOR_WHITE
     card_tbl.line.color.rgb = COLOR_BORDER
 
-    tb_t = slide5.shapes.add_textbox(Inches(1.1), Inches(3.5), Inches(11.1), Inches(3.0))
+    tb_t = slide5.shapes.add_textbox(Inches(1.1), Inches(3.55), Inches(11.1), Inches(3.0))
     tf_t = tb_t.text_frame
     tf_t.word_wrap = True
     
     p = tf_t.paragraphs[0]
     p.text = "Chronological Held-Out Out-of-Sample Evaluation (123 Calendar Days: Jul 1 – Oct 31, 2024)"
-    p.font.size = Pt(13)
+    p.font.size = Pt(15)
     p.font.bold = True
     p.font.color.rgb = COLOR_DARK_SLATE
 
@@ -322,7 +322,7 @@ def create_deck():
     for name, mae, rmse, r2, desc in model_rows:
         p_row = tf_t.add_paragraph()
         p_row.text = f"{name:<35} | MAE: {mae} pts | RMSE: {rmse} | R²: {r2} | {desc}"
-        p_row.font.size = Pt(10)
+        p_row.font.size = Pt(12)
         p_row.font.bold = ("Persistence" in name)
         p_row.font.color.rgb = COLOR_DARK_SLATE if "Persistence" in name else COLOR_MUTED
         p_row.space_before = Pt(6)
@@ -357,7 +357,7 @@ def create_deck():
         tf = tb.text_frame
         p = tf.paragraphs[0]
         p.text = s_title
-        p.font.size = Pt(12)
+        p.font.size = Pt(13.5)
         p.font.bold = True
         p.font.color.rgb = COLOR_DARK_SLATE
         
@@ -366,7 +366,7 @@ def create_deck():
         tf_d.word_wrap = True
         p_d = tf_d.paragraphs[0]
         p_d.text = s_desc
-        p_d.font.size = Pt(9)
+        p_d.font.size = Pt(10.5)
         p_d.font.color.rgb = COLOR_MUTED
 
     # -------------------------------------------------------------
@@ -395,20 +395,20 @@ def create_deck():
         tf.word_wrap = True
         p0 = tf.paragraphs[0]
         p0.text = title
-        p0.font.size = Pt(14)
+        p0.font.size = Pt(16)
         p0.font.bold = True
         p0.font.color.rgb = COLOR_DARK_SLATE
         
         p1 = tf.add_paragraph()
         p1.text = comp
-        p1.font.size = Pt(10)
+        p1.font.size = Pt(11.5)
         p1.font.bold = True
         p1.font.color.rgb = COLOR_SKY
         p1.space_before = Pt(2)
         
         p2 = tf.add_paragraph()
         p2.text = desc
-        p2.font.size = Pt(10)
+        p2.font.size = Pt(12.5)
         p2.font.color.rgb = COLOR_MUTED
         p2.space_before = Pt(6)
 
@@ -430,7 +430,7 @@ def create_deck():
     tf_l8.word_wrap = True
     p = tf_l8.paragraphs[0]
     p.text = "Key Project Takeaways"
-    p.font.size = Pt(16)
+    p.font.size = Pt(17)
     p.font.bold = True
     p.font.color.rgb = COLOR_DARK_SLATE
 
@@ -443,7 +443,7 @@ def create_deck():
     for imp in impacts:
         p_i = tf_l8.add_paragraph()
         p_i.text = f"• {imp}"
-        p_i.font.size = Pt(11)
+        p_i.font.size = Pt(13)
         p_i.font.color.rgb = COLOR_MUTED
         p_i.space_before = Pt(10)
 
@@ -458,13 +458,13 @@ def create_deck():
     tf_r8.word_wrap = True
     p = tf_r8.paragraphs[0]
     p.text = "Limitations & Future Scope"
-    p.font.size = Pt(16)
+    p.font.size = Pt(17)
     p.font.bold = True
     p.font.color.rgb = COLOR_DARK_SLATE
     
     p_sub = tf_r8.add_paragraph()
     p_sub.text = "Future work — not implemented in this prototype"
-    p_sub.font.size = Pt(11)
+    p_sub.font.size = Pt(12)
     p_sub.font.bold = True
     p_sub.font.color.rgb = RGBColor(194, 65, 12)
     p_sub.space_before = Pt(4)
@@ -478,7 +478,7 @@ def create_deck():
     for lim in limits:
         p_l = tf_r8.add_paragraph()
         p_l.text = f"• {lim}"
-        p_l.font.size = Pt(10.5)
+        p_l.font.size = Pt(12.5)
         p_l.font.color.rgb = COLOR_MUTED
         p_l.space_before = Pt(8)
 

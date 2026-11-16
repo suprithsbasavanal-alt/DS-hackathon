@@ -19,8 +19,8 @@ This document details the exact execution commands, offline testing protocol, sl
 | 9 | **All external network access is disabled during offline testing.** | **[x] Verified** | Tested and verified on `127.0.0.1:8000` with zero external network requests. |
 | 10 | **The application starts using the exact documented commands.** | **[x] Verified** | Single command: `./venv/bin/uvicorn backend.main:app --host 127.0.0.1 --port 8000` launches both API and static React frontend. |
 | 11 | **Presentation screenshots match the current application.** | **[x] Verified** | High-resolution captures from live application embedded in Slide 6 of `BreatheWise_Hackathon_Presentation.pptx`. |
-| 12 | **The pitch has been timed aloud.** | **[x] Script-calibrated** | 2-minute pitch script calibrated to ~275 words at 135 wpm conversational cadence (120 seconds). Spoken delivery rehearsal planned prior to judge entrance. |
-| 13 | **The complete demonstration has been timed at three minutes.** | **[x] Script-calibrated** | Runbook calibrated by segment: Overview (35s) $\to$ Explorer (35s) $\to$ Forecast Arena (45s) $\to$ Health Advisory (30s) $\to$ Transparency (25s) $\to$ Closing (10s) = Exactly 180s. Spoken execution rehearsal planned prior to judge entrance. |
+| 12 | **The pitch has been timed aloud.** | **[ ] Pending live rehearsal** | Script-calibrated to exactly 254 words at 135 wpm (113s speech + 7s conversational pauses = 120s). Live spoken run planned during setup prior to judge entrance. |
+| 13 | **The complete demonstration has been timed at three minutes.** | **[ ] Pending live rehearsal** | Runbook calibrated by segment: Overview (35s) $\to$ Explorer (35s) $\to$ Forecast Arena (45s) $\to$ Health Advisory (30s) $\to$ Transparency (25s) $\to$ Closing (10s) = Exactly 180s. Live spoken execution planned during setup prior to judge entrance. |
 | 14 | **Backup screenshots and presentation files are available.** | **[x] Verified** | All 5 PNG screenshots preserved in `screenshots/` and artifact directory; PowerPoint deck generated at `presentation/BreatheWise_Hackathon_Presentation.pptx`. |
 
 ---
