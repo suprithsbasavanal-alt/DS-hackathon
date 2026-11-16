@@ -106,3 +106,41 @@ def test_transparency_ledger():
     assert data["audit_metrics"]["total_raw_daily_records"] == 50584
     assert data["audit_metrics"]["compliant_daily_records_preserved"] == 46795
     assert data["data_provenance"]["city"] == "Bengaluru, Karnataka, India"
+
+
+def test_frontend_static_serving():
+    """Verify that root / serves index.html and assets are reachable."""
+    response = client.get("/")
+    assert response.status_code == 200
+    assert "text/html" in response.headers.get("content-type", "")
+    assert "BreatheWise" in response.text
+
+
+def test_ai_expansion_routes_presence():
+    """Verify that all four Phase B, C, and D routes are wired and responsive."""
+    # 1. AI Insights (Phase B)
+    res_insights = client.get("/api/ai/insights?station_id=city_composite&date=2024-10-31")
+    assert res_insights.status_code == 200
+    assert res_insights.json()["status"] == "success"
+
+    # 2. AI Regimes (Phase C)
+    res_regimes = client.get("/api/ai/regimes")
+    assert res_regimes.status_code == 200
+    assert res_regimes.json()["status"] == "success"
+
+    # 3. AI Health Advisory (Phase D)
+    res_health = client.get("/api/ai/health-advisory?station_id=city_composite&date=2024-10-31")
+    assert res_health.status_code == 200
+    assert res_health.json()["status"] == "success"
+
+    # 4. Purification Simulator (Phase D)
+    res_purify = client.post("/api/purification/simulate", json={
+        "room_area_m2": 20.0,
+        "ceiling_height_m": 2.8,
+        "initial_pm25_ug_m3": 67.7,
+        "cadr_m3_h": 300.0,
+        "runtime_hours": 2.0
+    })
+    assert res_purify.status_code == 200
+    assert res_purify.json()["status"] == "success"
+

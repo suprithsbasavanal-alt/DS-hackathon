@@ -6,6 +6,7 @@ import { ExplorerView } from './views/ExplorerView';
 import { ForecastArenaView } from './views/ForecastArenaView';
 import { HealthAdvisoryView } from './views/HealthAdvisoryView';
 import { DataTransparencyView } from './views/DataTransparencyView';
+import { AIInsightsView } from './views/AIInsightsView';
 
 import {
   fetchCitySummary,
@@ -31,7 +32,7 @@ import { AlertCircle, RefreshCw } from 'lucide-react';
 export const App: React.FC = () => {
   const getInitialTab = () => {
     const hash = window.location.hash.replace('#', '');
-    if (['overview', 'explorer', 'forecast', 'health', 'transparency'].includes(hash)) {
+    if (['overview', 'explorer', 'forecast', 'ai-insights', 'health', 'transparency'].includes(hash)) {
       return hash;
     }
     return 'overview';
@@ -49,7 +50,7 @@ export const App: React.FC = () => {
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.replace('#', '');
-      if (['overview', 'explorer', 'forecast', 'health', 'transparency'].includes(hash)) {
+      if (['overview', 'explorer', 'forecast', 'ai-insights', 'health', 'transparency'].includes(hash)) {
         setActiveTabState(hash);
       }
     };
@@ -150,6 +151,11 @@ export const App: React.FC = () => {
               <ForecastArenaView
                 forecastData={forecastData}
                 loading={loading}
+              />
+            )}
+            {activeTab === 'ai-insights' && (
+              <AIInsightsView
+                stations={stations}
               />
             )}
             {activeTab === 'health' && (

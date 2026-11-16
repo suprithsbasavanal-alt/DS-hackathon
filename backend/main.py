@@ -203,6 +203,106 @@ def get_data_transparency() -> Dict[str, Any]:
     return get_cached_json("data_transparency_metrics.json")
 
 
+# ---------------------------------------------------------
+# Phase B: Environmental Intelligence & Threshold Foundation
+# ---------------------------------------------------------
+from backend.schemas.environmental import EnvironmentalInsightsResponse
+from backend.environmental_analysis import get_environmental_insights
+
+
+@app.get("/api/ai/insights", response_model=EnvironmentalInsightsResponse)
+def get_ai_insights(
+    station_id: str = Query("city_composite", description="Station ID or 'city_composite'"),
+    date: str = Query("2024-10-31", description="Observation date (YYYY-MM-DD)")
+) -> EnvironmentalInsightsResponse:
+    """
+    Returns multi-pollutant threshold assessments against CPCB Table 3.2,
+    orthogonal wind components (u, v), meteorological context, and retrospective correlation matrices.
+    """
+    return get_environmental_insights(station_id=station_id, date_str=date)
+
+
+# ---------------------------------------------------------
+# Phase C: Exploratory Environmental Regimes
+# ---------------------------------------------------------
+from backend.schemas.regimes import EnvironmentalRegimesResponse
+from backend.environmental_regimes import get_environmental_regimes
+
+
+@app.get("/api/ai/regimes", response_model=EnvironmentalRegimesResponse)
+def get_ai_regimes(
+    force_fallback: bool = Query(False, description="Force deterministic seasonal quantile fallback for testing/degradation")
+) -> EnvironmentalRegimesResponse:
+    """
+    Returns unsupervised standardized k-Means exploratory environmental regimes (d=8)
+    with silhouette diagnostic metrics, acceptance heuristic verification, and automated quantile fallback.
+    """
+    return get_environmental_regimes(force_fallback=force_fallback)
+
+
+# ---------------------------------------------------------
+# Phase D: Decision Support & Physics Simulation
+# ---------------------------------------------------------
+from backend.schemas.health import HealthAdvisoryResponse
+from backend.schemas.purification import (
+    PurificationSimulationRequest,
+    PurificationSimulationResponse,
+)
+from backend.health_advisor import evaluate_health_advisories
+from backend.purification_simulator import simulate_purification
+
+
+@app.get("/api/ai/health-advisory", response_model=HealthAdvisoryResponse)
+def get_ai_health_advisory(
+    aqi: Optional[float] = Query(None, description="Hypothetical custom AQI (0 to 500)"),
+    station_id: str = Query("city_composite", description="Station ID or 'city_composite'"),
+    date: str = Query("2024-10-31", description="Observation date (YYYY-MM-DD)")
+) -> HealthAdvisoryResponse:
+    """
+    Returns deterministic CPCB-based health guidance with rule IDs, trigger evidence,
+    and sensitive cohort advice. Supports both historical observation evaluation and hypothetical queries.
+    """
+    if aqi is not None:
+        return evaluate_health_advisories(
+            aqi=aqi,
+            pollutants=None,
+            evaluation_date=None,
+            station_id=None,
+            prominent_pollutant=None,
+            is_hypothetical=True
+        )
+
+    insights = get_environmental_insights(station_id=station_id, date_str=date)
+    pollutants_map = {p.name: p.concentration for p in insights.pollutants}
+    target_aqi = float(insights.aqi_summary.aqi) if insights.aqi_summary.aqi is not None else 100.0
+
+    return evaluate_health_advisories(
+        aqi=target_aqi,
+        pollutants=pollutants_map,
+        evaluation_date=date,
+        station_id=station_id,
+        prominent_pollutant=insights.aqi_summary.prominent_pollutant,
+        is_hypothetical=False
+    )
+
+
+@app.post("/api/purification/simulate", response_model=PurificationSimulationResponse)
+def run_purification_simulation(
+    req: PurificationSimulationRequest
+) -> PurificationSimulationResponse:
+    """
+    Executes idealized first-order room CADR decay simulation: C(t) = C0 * exp(-(CADR/V)*t).
+    Generates a 40-point decay curve and discloses all 5 physical idealizing assumptions.
+    """
+    return simulate_purification(
+        room_area_m2=req.room_area_m2,
+        ceiling_height_m=req.ceiling_height_m,
+        initial_pm25_ug_m3=req.initial_pm25_ug_m3,
+        cadr_m3_h=req.cadr_m3_h,
+        runtime_hours=req.runtime_hours
+    )
+
+
 # Mount static frontend build if it exists (for single-command offline demo)
 if os.path.exists(FRONTEND_DIST):
     app.mount("/", StaticFiles(directory=FRONTEND_DIST, html=True), name="frontend")

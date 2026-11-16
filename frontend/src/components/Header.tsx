@@ -7,7 +7,8 @@ import {
   ShieldAlert,
   FileCheck2,
   Calendar,
-  WifiOff
+  WifiOff,
+  Sparkles
 } from 'lucide-react';
 
 interface HeaderProps {
@@ -21,6 +22,7 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, latestD
     { id: 'overview', label: 'Overview', icon: LayoutDashboard },
     { id: 'explorer', label: 'Explorer', icon: LineChart },
     { id: 'forecast', label: 'Forecast Arena', icon: Target },
+    { id: 'ai-insights', label: 'AI Insights', icon: Sparkles },
     { id: 'health', label: 'Health Advisory', icon: ShieldAlert },
     { id: 'transparency', label: 'Data Transparency', icon: FileCheck2 },
   ];

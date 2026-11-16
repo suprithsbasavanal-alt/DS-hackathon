@@ -1,0 +1,201 @@
+{
+  "status": "success",
+  "is_fallback": false,
+  "diagnostic_metrics": {
+    "n_samples": 670,
+    "feature_dim": 8,
+    "k_evaluated": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "optimal_k": 3,
+    "silhouette_score": 0.3557,
+    "min_cluster_size_pct": 19.4,
+    "cluster_inertia": 2601.0,
+    "cluster_sizes": [
+      338,
+      130,
+      202
+    ],
+    "multi_seed_stability_ari": 1.0
+  },
+  "acceptance_heuristic": {
+    "min_silhouette": 0.3,
+    "min_cluster_size_pct": 5.0,
+    "status": "heuristic_passed",
+    "note": "Project-defined analytical acceptance heuristic, not physical proof of cluster reality."
+  },
+  "regimes": [
+    {
+      "cluster_id": 0,
+      "name": "Monsoon and high-ventilation pattern",
+      "description": "Observed pattern featuring positive zonal wind u (+10.2 km/h, westerly flow), high relative humidity (mean 78.9%), lower surface atmospheric pressure (mean 910.4 hPa), and lowest observed particulate concentrations (PM2.5 mean 21.4 \u00b5g/m\u00b3, PM10 mean 50.4 \u00b5g/m\u00b3, city AQI mean 52.1). Most frequently recorded in June through September.",
+      "sample_count": 338,
+      "sample_percentage": 50.45,
+      "dominant_months": [
+        "July",
+        "August",
+        "June",
+        "September",
+        "May"
+      ],
+      "centroid": {
+        "pm25": 21.35,
+        "pm10": 50.42,
+        "no2": 16.49,
+        "temp_mean": 23.56,
+        "humidity_mean": 78.92,
+        "wind_u": 10.18,
+        "wind_v": 1.44,
+        "pressure_mean": 910.41
+      },
+      "mean_aqi": 52.1,
+      "mean_category": "Satisfactory",
+      "quantiles": {
+        "city_aqi": {
+          "min": 31.0,
+          "q25": 45.0,
+          "median": 50.5,
+          "q75": 58.0,
+          "max": 102.0
+        },
+        "pm25": {
+          "min": 9.6,
+          "q25": 17.3,
+          "median": 20.7,
+          "q75": 24.4,
+          "max": 62.4
+        },
+        "pm10": {
+          "min": 26.9,
+          "q25": 43.1,
+          "median": 49.8,
+          "q75": 57.4,
+          "max": 80.9
+        },
+        "no2": {
+          "min": 11.1,
+          "q25": 14.8,
+          "median": 16.2,
+          "q75": 17.8,
+          "max": 36.4
+        }
+      }
+    },
+    {
+      "cluster_id": 1,
+      "name": "Hot/dry summer-transition pattern",
+      "description": "Observed pattern featuring highest mean daily temperatures (27.4\u00b0C), lowest relative humidity (mean 47.1%), moderate negative zonal wind u (-5.3 km/h, easterly flow), and intermediate particulate concentrations (PM2.5 mean 40.6 \u00b5g/m\u00b3, PM10 mean 85.0 \u00b5g/m\u00b3, city AQI mean 87.9). Most frequently recorded in March through May.",
+      "sample_count": 130,
+      "sample_percentage": 19.4,
+      "dominant_months": [
+        "April",
+        "March",
+        "May",
+        "February",
+        "October"
+      ],
+      "centroid": {
+        "pm25": 40.58,
+        "pm10": 84.97,
+        "no2": 18.67,
+        "temp_mean": 27.43,
+        "humidity_mean": 47.13,
+        "wind_u": -5.35,
+        "wind_v": 4.44,
+        "pressure_mean": 912.83
+      },
+      "mean_aqi": 87.9,
+      "mean_category": "Satisfactory",
+      "quantiles": {
+        "city_aqi": {
+          "min": 51.0,
+          "q25": 74.0,
+          "median": 87.0,
+          "q75": 98.8,
+          "max": 140.0
+        },
+        "pm25": {
+          "min": 21.3,
+          "q25": 32.5,
+          "median": 39.8,
+          "q75": 46.6,
+          "max": 76.2
+        },
+        "pm10": {
+          "min": 48.3,
+          "q25": 73.4,
+          "median": 83.5,
+          "q75": 95.9,
+          "max": 127.5
+        },
+        "no2": {
+          "min": 11.9,
+          "q25": 15.8,
+          "median": 17.3,
+          "q75": 20.8,
+          "max": 30.7
+        }
+      }
+    },
+    {
+      "cluster_id": 2,
+      "name": "Winter/post-monsoon pattern",
+      "description": "Observed pattern featuring cooler mean daily temperatures (22.3\u00b0C), highest surface atmospheric pressure (mean 914.3 hPa), strongest negative zonal wind u (-10.8 km/h, easterly/northeasterly flow), and highest observed criteria pollutant concentrations (PM2.5 mean 46.0 \u00b5g/m\u00b3, PM10 mean 91.2 \u00b5g/m\u00b3, NO2 mean 22.2 \u00b5g/m\u00b3, city AQI mean 95.0). Most frequently recorded in October through February.",
+      "sample_count": 202,
+      "sample_percentage": 30.15,
+      "dominant_months": [
+        "January",
+        "February",
+        "October",
+        "December",
+        "November"
+      ],
+      "centroid": {
+        "pm25": 45.97,
+        "pm10": 91.18,
+        "no2": 22.16,
+        "temp_mean": 22.34,
+        "humidity_mean": 62.79,
+        "wind_u": -10.76,
+        "wind_v": -0.48,
+        "pressure_mean": 914.33
+      },
+      "mean_aqi": 95.0,
+      "mean_category": "Satisfactory",
+      "quantiles": {
+        "city_aqi": {
+          "min": 53.0,
+          "q25": 79.2,
+          "median": 92.0,
+          "q75": 106.0,
+          "max": 173.0
+        },
+        "pm25": {
+          "min": 21.9,
+          "q25": 37.5,
+          "median": 43.9,
+          "q75": 49.4,
+          "max": 182.0
+        },
+        "pm10": {
+          "min": 51.9,
+          "q25": 77.9,
+          "median": 89.5,
+          "q75": 102.1,
+          "max": 159.2
+        },
+        "no2": {
+          "min": 15.6,
+          "q25": 18.3,
+          "median": 20.0,
+          "q75": 26.6,
+          "max": 35.5
+        }
+      }
+    }
+  ],
+  "disclaimer": "Exploratory atmospheric groupings based on standardized observations. Does not establish pollutant source attribution or physical causation."
+}
