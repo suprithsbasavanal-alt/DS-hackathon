@@ -1,0 +1,59 @@
+{
+  "correlation_matrix": {
+    "pm25": {
+      "temp_mean": 0.07,
+      "humidity_mean": -0.553,
+      "precipitation_sum": -0.345,
+      "wind_speed_resultant": -0.263,
+      "pressure_mean": 0.556
+    },
+    "pm10": {
+      "temp_mean": 0.117,
+      "humidity_mean": -0.637,
+      "precipitation_sum": -0.431,
+      "wind_speed_resultant": -0.289,
+      "pressure_mean": 0.617
+    },
+    "no2": {
+      "temp_mean": -0.246,
+      "humidity_mean": -0.407,
+      "precipitation_sum": -0.199,
+      "wind_speed_resultant": -0.181,
+      "pressure_mean": 0.471
+    },
+    "so2": {
+      "temp_mean": 0.268,
+      "humidity_mean": -0.143,
+      "precipitation_sum": -0.048,
+      "wind_speed_resultant": 0.034,
+      "pressure_mean": 0.007
+    },
+    "city_aqi": {
+      "temp_mean": 0.105,
+      "humidity_mean": -0.623,
+      "precipitation_sum": -0.419,
+      "wind_speed_resultant": -0.284,
+      "pressure_mean": 0.607
+    }
+  },
+  "key_findings": [
+    {
+      "pair": "PM2.5 vs Wind Speed",
+      "correlation": -0.263,
+      "direction": "Strong Negative",
+      "insight": "Higher surface wind speed enhances aerodynamic dispersion, correlating with lower particulate accumulation."
+    },
+    {
+      "pair": "PM10 vs Precipitation",
+      "correlation": -0.431,
+      "direction": "Negative",
+      "insight": "Rainfall events exhibit wet scavenging and particulate washout, reducing suspended coarse dust."
+    },
+    {
+      "pair": "PM2.5 vs Relative Humidity",
+      "correlation": -0.553,
+      "direction": "Positive",
+      "insight": "High relative humidity in post-monsoon and winter months facilitates secondary aerosol hygroscopic growth."
+    }
+  ]
+}

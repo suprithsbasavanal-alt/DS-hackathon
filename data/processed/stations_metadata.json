@@ -1,0 +1,268 @@
+[
+  {
+    "station_id": "site_162",
+    "station_name": "BTM Layout, Bengaluru - CPCB",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "latitude": 12.9135218,
+    "longitude": 77.5950804,
+    "is_active": true,
+    "reporting_days_count": 621,
+    "valid_aqi_days_count": 574,
+    "monitored_parameters": [
+      "CO",
+      "NH3",
+      "NO2",
+      "Ozone",
+      "PM10",
+      "PM2.5",
+      "SO2"
+    ]
+  },
+  {
+    "station_id": "site_164",
+    "station_name": "BWSSB Kadabesanahalli, Bengaluru - CPCB",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "latitude": 12.9352049,
+    "longitude": 77.6814488,
+    "is_active": false,
+    "reporting_days_count": 0,
+    "valid_aqi_days_count": 0,
+    "monitored_parameters": []
+  },
+  {
+    "station_id": "site_1553",
+    "station_name": "Bapuji Nagar, Bengaluru - KSPCB",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "latitude": 12.951913,
+    "longitude": 77.539784,
+    "is_active": true,
+    "reporting_days_count": 647,
+    "valid_aqi_days_count": 612,
+    "monitored_parameters": [
+      "CO",
+      "NH3",
+      "NO2",
+      "Ozone",
+      "PM10",
+      "PM2.5",
+      "SO2"
+    ]
+  },
+  {
+    "station_id": "site_165",
+    "station_name": "City Railway Station, Bengaluru - KSPCB",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "latitude": 12.9756843,
+    "longitude": 77.5660749,
+    "is_active": true,
+    "reporting_days_count": 479,
+    "valid_aqi_days_count": 457,
+    "monitored_parameters": [
+      "CO",
+      "NO2",
+      "PM10",
+      "SO2"
+    ]
+  },
+  {
+    "station_id": "site_1554",
+    "station_name": "Hebbal, Bengaluru - KSPCB",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "latitude": 13.029152,
+    "longitude": 77.585901,
+    "is_active": true,
+    "reporting_days_count": 596,
+    "valid_aqi_days_count": 568,
+    "monitored_parameters": [
+      "CO",
+      "NH3",
+      "NO2",
+      "Ozone",
+      "PM10",
+      "PM2.5",
+      "SO2"
+    ]
+  },
+  {
+    "station_id": "site_1555",
+    "station_name": "Hombegowda Nagar, Bengaluru - KSPCB",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "latitude": 12.938539,
+    "longitude": 77.5901,
+    "is_active": true,
+    "reporting_days_count": 638,
+    "valid_aqi_days_count": 632,
+    "monitored_parameters": [
+      "CO",
+      "NH3",
+      "NO2",
+      "Ozone",
+      "PM10",
+      "PM2.5",
+      "SO2"
+    ]
+  },
+  {
+    "station_id": "site_1556",
+    "station_name": "Jayanagar 5th Block, Bengaluru - KSPCB",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "latitude": 12.920984,
+    "longitude": 77.584908,
+    "is_active": true,
+    "reporting_days_count": 613,
+    "valid_aqi_days_count": 610,
+    "monitored_parameters": [
+      "CO",
+      "NH3",
+      "NO2",
+      "Ozone",
+      "PM10",
+      "PM2.5",
+      "SO2"
+    ]
+  },
+  {
+    "station_id": "site_5729",
+    "station_name": "Jigani, Bengaluru - KSPCB",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "latitude": 12.7816279,
+    "longitude": 77.6299145,
+    "is_active": true,
+    "reporting_days_count": 502,
+    "valid_aqi_days_count": 481,
+    "monitored_parameters": [
+      "CO",
+      "NH3",
+      "NO2",
+      "Ozone",
+      "PM10",
+      "PM2.5",
+      "SO2"
+    ]
+  },
+  {
+    "station_id": "site_5681",
+    "station_name": "Kasturi Nagar, Bengaluru - KSPCB",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "latitude": 13.003872,
+    "longitude": 77.664217,
+    "is_active": true,
+    "reporting_days_count": 547,
+    "valid_aqi_days_count": 536,
+    "monitored_parameters": [
+      "CO",
+      "NH3",
+      "NO2",
+      "Ozone",
+      "PM10",
+      "PM2.5",
+      "SO2"
+    ]
+  },
+  {
+    "station_id": "site_163",
+    "station_name": "Peenya, Bengaluru - CPCB",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "latitude": 13.0270199,
+    "longitude": 77.494094,
+    "is_active": true,
+    "reporting_days_count": 570,
+    "valid_aqi_days_count": 531,
+    "monitored_parameters": [
+      "CO",
+      "NH3",
+      "NO2",
+      "Ozone",
+      "PM10",
+      "PM2.5",
+      "SO2"
+    ]
+  },
+  {
+    "station_id": "site_5678",
+    "station_name": "RVCE-Mailasandra, Bengaluru - KSPCB",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "latitude": 12.921418,
+    "longitude": 77.502466,
+    "is_active": true,
+    "reporting_days_count": 581,
+    "valid_aqi_days_count": 502,
+    "monitored_parameters": [
+      "CO",
+      "NH3",
+      "NO2",
+      "Ozone",
+      "PM10",
+      "PM2.5",
+      "SO2"
+    ]
+  },
+  {
+    "station_id": "site_166",
+    "station_name": "Sanegurava Halli, Bengaluru - KSPCB",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "latitude": 12.990328,
+    "longitude": 77.5431385,
+    "is_active": true,
+    "reporting_days_count": 581,
+    "valid_aqi_days_count": 536,
+    "monitored_parameters": [
+      "CO",
+      "NO2",
+      "PM10",
+      "SO2"
+    ]
+  },
+  {
+    "station_id": "site_5686",
+    "station_name": "Shivapura_Peenya, Bengaluru - KSPCB",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "latitude": 13.0246342,
+    "longitude": 77.5080115,
+    "is_active": true,
+    "reporting_days_count": 568,
+    "valid_aqi_days_count": 565,
+    "monitored_parameters": [
+      "CO",
+      "NH3",
+      "NO2",
+      "Ozone",
+      "PM10",
+      "PM2.5",
+      "SO2"
+    ]
+  },
+  {
+    "station_id": "site_1558",
+    "station_name": "Silk Board, Bengaluru - KSPCB",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "latitude": 12.917348,
+    "longitude": 77.622813,
+    "is_active": true,
+    "reporting_days_count": 621,
+    "valid_aqi_days_count": 605,
+    "monitored_parameters": [
+      "CO",
+      "NH3",
+      "NO2",
+      "Ozone",
+      "PM10",
+      "PM2.5",
+      "SO2"
+    ]
+  }
+]

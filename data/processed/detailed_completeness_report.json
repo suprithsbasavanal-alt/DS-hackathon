@@ -1,0 +1,725 @@
+{
+  "audit_timestamp": "2026-11-16T11:05:35.423963",
+  "temporal_window": {
+    "start": "2023-01-01",
+    "end": "2024-10-31",
+    "total_calendar_days": 670
+  },
+  "station_universe": {
+    "total_cataloged": 14,
+    "active_in_period": 13,
+    "decommissioned": [
+      "site_164 (BWSSB Kadabesanahalli, closed Aug 2022)"
+    ]
+  },
+  "matrix_completeness": {
+    "theoretical_max_combinations": 60970,
+    "actual_combinations": 50584,
+    "missing_combinations": 10386,
+    "reporting_density_pct": 82.97,
+    "duplicate_combinations": 0
+  },
+  "data_sufficiency_n_hours": {
+    "total_evaluated": 50584,
+    "n_24_hours": 40643,
+    "n_ge_16_compliant": 46795,
+    "n_lt_16_insufficient": 3789,
+    "n_lt_8_severe_insufficient": 765,
+    "cpcb_compliance_rate_pct": 92.51
+  },
+  "pollutant_summary": {
+    "PM2.5": {
+      "total_records": 6693,
+      "expected_records": 8710,
+      "coverage_pct": 76.8,
+      "zero_values_count": 0,
+      "severe_threshold_spikes": 18
+    },
+    "PM10": {
+      "total_records": 7812,
+      "expected_records": 8710,
+      "coverage_pct": 89.7,
+      "zero_values_count": 0,
+      "severe_threshold_spikes": 1
+    },
+    "NO2": {
+      "total_records": 7604,
+      "expected_records": 8710,
+      "coverage_pct": 87.3,
+      "zero_values_count": 0,
+      "severe_threshold_spikes": 0
+    },
+    "SO2": {
+      "total_records": 7884,
+      "expected_records": 8710,
+      "coverage_pct": 90.5,
+      "zero_values_count": 0,
+      "severe_threshold_spikes": 0
+    },
+    "CO": {
+      "total_records": 7764,
+      "expected_records": 8710,
+      "coverage_pct": 89.1,
+      "zero_values_count": 4,
+      "severe_threshold_spikes": 0
+    },
+    "Ozone": {
+      "total_records": 6593,
+      "expected_records": 8710,
+      "coverage_pct": 75.7,
+      "zero_values_count": 0,
+      "severe_threshold_spikes": 0
+    },
+    "NH3": {
+      "total_records": 6234,
+      "expected_records": 8710,
+      "coverage_pct": 71.6,
+      "zero_values_count": 0,
+      "severe_threshold_spikes": 0
+    }
+  },
+  "station_summary": [
+    {
+      "station_id": "site_162",
+      "station_name": "BTM Layout, Bengaluru - CPCB",
+      "days_with_any_reading": 631,
+      "temporal_coverage_pct": 94.2,
+      "parameters": {
+        "PM2.5": {
+          "records": 606,
+          "coverage_pct": 90.4
+        },
+        "PM10": {
+          "records": 607,
+          "coverage_pct": 90.6
+        },
+        "NO2": {
+          "records": 629,
+          "coverage_pct": 93.9
+        },
+        "SO2": {
+          "records": 626,
+          "coverage_pct": 93.4
+        },
+        "CO": {
+          "records": 622,
+          "coverage_pct": 92.8
+        },
+        "Ozone": {
+          "records": 627,
+          "coverage_pct": 93.6
+        },
+        "NH3": {
+          "records": 629,
+          "coverage_pct": 93.9
+        }
+      }
+    },
+    {
+      "station_id": "site_1553",
+      "station_name": "Bapuji Nagar, Bengaluru - KSPCB",
+      "days_with_any_reading": 665,
+      "temporal_coverage_pct": 99.3,
+      "parameters": {
+        "PM2.5": {
+          "records": 648,
+          "coverage_pct": 96.7
+        },
+        "PM10": {
+          "records": 648,
+          "coverage_pct": 96.7
+        },
+        "NO2": {
+          "records": 641,
+          "coverage_pct": 95.7
+        },
+        "SO2": {
+          "records": 662,
+          "coverage_pct": 98.8
+        },
+        "CO": {
+          "records": 655,
+          "coverage_pct": 97.8
+        },
+        "Ozone": {
+          "records": 658,
+          "coverage_pct": 98.2
+        },
+        "NH3": {
+          "records": 648,
+          "coverage_pct": 96.7
+        }
+      }
+    },
+    {
+      "station_id": "site_165",
+      "station_name": "City Railway Station, Bengaluru - KSPCB",
+      "days_with_any_reading": 546,
+      "temporal_coverage_pct": 81.5,
+      "parameters": {
+        "PM2.5": {
+          "records": 0,
+          "coverage_pct": 0.0
+        },
+        "PM10": {
+          "records": 542,
+          "coverage_pct": 80.9
+        },
+        "NO2": {
+          "records": 545,
+          "coverage_pct": 81.3
+        },
+        "SO2": {
+          "records": 541,
+          "coverage_pct": 80.7
+        },
+        "CO": {
+          "records": 543,
+          "coverage_pct": 81.0
+        },
+        "Ozone": {
+          "records": 0,
+          "coverage_pct": 0.0
+        },
+        "NH3": {
+          "records": 0,
+          "coverage_pct": 0.0
+        }
+      }
+    },
+    {
+      "station_id": "site_1554",
+      "station_name": "Hebbal, Bengaluru - KSPCB",
+      "days_with_any_reading": 639,
+      "temporal_coverage_pct": 95.4,
+      "parameters": {
+        "PM2.5": {
+          "records": 635,
+          "coverage_pct": 94.8
+        },
+        "PM10": {
+          "records": 635,
+          "coverage_pct": 94.8
+        },
+        "NO2": {
+          "records": 499,
+          "coverage_pct": 74.5
+        },
+        "SO2": {
+          "records": 637,
+          "coverage_pct": 95.1
+        },
+        "CO": {
+          "records": 540,
+          "coverage_pct": 80.6
+        },
+        "Ozone": {
+          "records": 636,
+          "coverage_pct": 94.9
+        },
+        "NH3": {
+          "records": 497,
+          "coverage_pct": 74.2
+        }
+      }
+    },
+    {
+      "station_id": "site_1555",
+      "station_name": "Hombegowda Nagar, Bengaluru - KSPCB",
+      "days_with_any_reading": 659,
+      "temporal_coverage_pct": 98.4,
+      "parameters": {
+        "PM2.5": {
+          "records": 659,
+          "coverage_pct": 98.4
+        },
+        "PM10": {
+          "records": 659,
+          "coverage_pct": 98.4
+        },
+        "NO2": {
+          "records": 641,
+          "coverage_pct": 95.7
+        },
+        "SO2": {
+          "records": 659,
+          "coverage_pct": 98.4
+        },
+        "CO": {
+          "records": 655,
+          "coverage_pct": 97.8
+        },
+        "Ozone": {
+          "records": 652,
+          "coverage_pct": 97.3
+        },
+        "NH3": {
+          "records": 641,
+          "coverage_pct": 95.7
+        }
+      }
+    },
+    {
+      "station_id": "site_1556",
+      "station_name": "Jayanagar 5th Block, Bengaluru - KSPCB",
+      "days_with_any_reading": 650,
+      "temporal_coverage_pct": 97.0,
+      "parameters": {
+        "PM2.5": {
+          "records": 646,
+          "coverage_pct": 96.4
+        },
+        "PM10": {
+          "records": 644,
+          "coverage_pct": 96.1
+        },
+        "NO2": {
+          "records": 619,
+          "coverage_pct": 92.4
+        },
+        "SO2": {
+          "records": 649,
+          "coverage_pct": 96.9
+        },
+        "CO": {
+          "records": 644,
+          "coverage_pct": 96.1
+        },
+        "Ozone": {
+          "records": 641,
+          "coverage_pct": 95.7
+        },
+        "NH3": {
+          "records": 618,
+          "coverage_pct": 92.2
+        }
+      }
+    },
+    {
+      "station_id": "site_5729",
+      "station_name": "Jigani, Bengaluru - KSPCB",
+      "days_with_any_reading": 513,
+      "temporal_coverage_pct": 76.6,
+      "parameters": {
+        "PM2.5": {
+          "records": 508,
+          "coverage_pct": 75.8
+        },
+        "PM10": {
+          "records": 501,
+          "coverage_pct": 74.8
+        },
+        "NO2": {
+          "records": 513,
+          "coverage_pct": 76.6
+        },
+        "SO2": {
+          "records": 509,
+          "coverage_pct": 76.0
+        },
+        "CO": {
+          "records": 492,
+          "coverage_pct": 73.4
+        },
+        "Ozone": {
+          "records": 507,
+          "coverage_pct": 75.7
+        },
+        "NH3": {
+          "records": 507,
+          "coverage_pct": 75.7
+        }
+      }
+    },
+    {
+      "station_id": "site_5681",
+      "station_name": "Kasturi Nagar, Bengaluru - KSPCB",
+      "days_with_any_reading": 559,
+      "temporal_coverage_pct": 83.4,
+      "parameters": {
+        "PM2.5": {
+          "records": 549,
+          "coverage_pct": 81.9
+        },
+        "PM10": {
+          "records": 557,
+          "coverage_pct": 83.1
+        },
+        "NO2": {
+          "records": 546,
+          "coverage_pct": 81.5
+        },
+        "SO2": {
+          "records": 559,
+          "coverage_pct": 83.4
+        },
+        "CO": {
+          "records": 557,
+          "coverage_pct": 83.1
+        },
+        "Ozone": {
+          "records": 543,
+          "coverage_pct": 81.0
+        },
+        "NH3": {
+          "records": 546,
+          "coverage_pct": 81.5
+        }
+      }
+    },
+    {
+      "station_id": "site_163",
+      "station_name": "Peenya, Bengaluru - CPCB",
+      "days_with_any_reading": 603,
+      "temporal_coverage_pct": 90.0,
+      "parameters": {
+        "PM2.5": {
+          "records": 582,
+          "coverage_pct": 86.9
+        },
+        "PM10": {
+          "records": 584,
+          "coverage_pct": 87.2
+        },
+        "NO2": {
+          "records": 596,
+          "coverage_pct": 89.0
+        },
+        "SO2": {
+          "records": 587,
+          "coverage_pct": 87.6
+        },
+        "CO": {
+          "records": 601,
+          "coverage_pct": 89.7
+        },
+        "Ozone": {
+          "records": 570,
+          "coverage_pct": 85.1
+        },
+        "NH3": {
+          "records": 596,
+          "coverage_pct": 89.0
+        }
+      }
+    },
+    {
+      "station_id": "site_5678",
+      "station_name": "RVCE-Mailasandra, Bengaluru - KSPCB",
+      "days_with_any_reading": 625,
+      "temporal_coverage_pct": 93.3,
+      "parameters": {
+        "PM2.5": {
+          "records": 600,
+          "coverage_pct": 89.6
+        },
+        "PM10": {
+          "records": 576,
+          "coverage_pct": 86.0
+        },
+        "NO2": {
+          "records": 555,
+          "coverage_pct": 82.8
+        },
+        "SO2": {
+          "records": 607,
+          "coverage_pct": 90.6
+        },
+        "CO": {
+          "records": 593,
+          "coverage_pct": 88.5
+        },
+        "Ozone": {
+          "records": 561,
+          "coverage_pct": 83.7
+        },
+        "NH3": {
+          "records": 368,
+          "coverage_pct": 54.9
+        }
+      }
+    },
+    {
+      "station_id": "site_166",
+      "station_name": "Sanegurava Halli, Bengaluru - KSPCB",
+      "days_with_any_reading": 602,
+      "temporal_coverage_pct": 89.9,
+      "parameters": {
+        "PM2.5": {
+          "records": 0,
+          "coverage_pct": 0.0
+        },
+        "PM10": {
+          "records": 600,
+          "coverage_pct": 89.6
+        },
+        "NO2": {
+          "records": 597,
+          "coverage_pct": 89.1
+        },
+        "SO2": {
+          "records": 592,
+          "coverage_pct": 88.4
+        },
+        "CO": {
+          "records": 602,
+          "coverage_pct": 89.9
+        },
+        "Ozone": {
+          "records": 0,
+          "coverage_pct": 0.0
+        },
+        "NH3": {
+          "records": 0,
+          "coverage_pct": 0.0
+        }
+      }
+    },
+    {
+      "station_id": "site_5686",
+      "station_name": "Shivapura_Peenya, Bengaluru - KSPCB",
+      "days_with_any_reading": 598,
+      "temporal_coverage_pct": 89.3,
+      "parameters": {
+        "PM2.5": {
+          "records": 598,
+          "coverage_pct": 89.3
+        },
+        "PM10": {
+          "records": 598,
+          "coverage_pct": 89.3
+        },
+        "NO2": {
+          "records": 598,
+          "coverage_pct": 89.3
+        },
+        "SO2": {
+          "records": 594,
+          "coverage_pct": 88.7
+        },
+        "CO": {
+          "records": 598,
+          "coverage_pct": 89.3
+        },
+        "Ozone": {
+          "records": 598,
+          "coverage_pct": 89.3
+        },
+        "NH3": {
+          "records": 560,
+          "coverage_pct": 83.6
+        }
+      }
+    },
+    {
+      "station_id": "site_1558",
+      "station_name": "Silk Board, Bengaluru - KSPCB",
+      "days_with_any_reading": 663,
+      "temporal_coverage_pct": 99.0,
+      "parameters": {
+        "PM2.5": {
+          "records": 662,
+          "coverage_pct": 98.8
+        },
+        "PM10": {
+          "records": 661,
+          "coverage_pct": 98.7
+        },
+        "NO2": {
+          "records": 625,
+          "coverage_pct": 93.3
+        },
+        "SO2": {
+          "records": 662,
+          "coverage_pct": 98.8
+        },
+        "CO": {
+          "records": 662,
+          "coverage_pct": 98.8
+        },
+        "Ozone": {
+          "records": 600,
+          "coverage_pct": 89.6
+        },
+        "NH3": {
+          "records": 624,
+          "coverage_pct": 93.1
+        }
+      }
+    }
+  ],
+  "hourly_landmark_benchmark": {
+    "BTM_Layout_Jan2024": {
+      "station_id": "site_162",
+      "station_name": "BTM_Layout",
+      "slice_month": "Jan2024",
+      "total_hourly_records": 9465,
+      "distinct_timestamps": 736,
+      "monitored_parameters": [
+        "Benzene",
+        "CO",
+        "Eth-Benzene",
+        "MP-Xylene",
+        "NH3",
+        "NO",
+        "NO2",
+        "NOx",
+        "Ozone",
+        "PM10",
+        "PM2.5",
+        "SO2",
+        "Toluene"
+      ]
+    },
+    "BTM_Layout_Apr2024": {
+      "station_id": "site_162",
+      "station_name": "BTM_Layout",
+      "slice_month": "Apr2024",
+      "total_hourly_records": 8705,
+      "distinct_timestamps": 710,
+      "monitored_parameters": [
+        "Benzene",
+        "CO",
+        "Eth-Benzene",
+        "MP-Xylene",
+        "NH3",
+        "NO",
+        "NO2",
+        "NOx",
+        "Ozone",
+        "PM10",
+        "PM2.5",
+        "SO2",
+        "Toluene"
+      ]
+    },
+    "BTM_Layout_Jul2024": {
+      "station_id": "site_162",
+      "station_name": "BTM_Layout",
+      "slice_month": "Jul2024",
+      "total_hourly_records": 8455,
+      "distinct_timestamps": 709,
+      "monitored_parameters": [
+        "Benzene",
+        "CO",
+        "Eth-Benzene",
+        "MP-Xylene",
+        "NH3",
+        "NO",
+        "NO2",
+        "NOx",
+        "Ozone",
+        "PM10",
+        "PM2.5",
+        "SO2",
+        "Toluene"
+      ]
+    },
+    "BTM_Layout_Oct2024": {
+      "station_id": "site_162",
+      "station_name": "BTM_Layout",
+      "slice_month": "Oct2024",
+      "total_hourly_records": 9404,
+      "distinct_timestamps": 741,
+      "monitored_parameters": [
+        "Benzene",
+        "CO",
+        "Eth-Benzene",
+        "MP-Xylene",
+        "NH3",
+        "NO",
+        "NO2",
+        "NOx",
+        "Ozone",
+        "PM10",
+        "PM2.5",
+        "SO2",
+        "Toluene"
+      ]
+    },
+    "Peenya_Jan2024": {
+      "station_id": "site_163",
+      "station_name": "Peenya",
+      "slice_month": "Jan2024",
+      "total_hourly_records": 8622,
+      "distinct_timestamps": 744,
+      "monitored_parameters": [
+        "Benzene",
+        "CO",
+        "MP-Xylene",
+        "NH3",
+        "NO",
+        "NO2",
+        "NOx",
+        "Ozone",
+        "PM10",
+        "PM2.5",
+        "SO2",
+        "Toluene"
+      ]
+    },
+    "Peenya_Apr2024": {
+      "station_id": "site_163",
+      "station_name": "Peenya",
+      "slice_month": "Apr2024",
+      "total_hourly_records": 7095,
+      "distinct_timestamps": 645,
+      "monitored_parameters": [
+        "Benzene",
+        "CO",
+        "MP-Xylene",
+        "NH3",
+        "NO",
+        "NO2",
+        "NOx",
+        "Ozone",
+        "PM10",
+        "PM2.5",
+        "SO2",
+        "Toluene"
+      ]
+    },
+    "Peenya_Jul2024": {
+      "station_id": "site_163",
+      "station_name": "Peenya",
+      "slice_month": "Jul2024",
+      "total_hourly_records": 6806,
+      "distinct_timestamps": 608,
+      "monitored_parameters": [
+        "Benzene",
+        "CO",
+        "MP-Xylene",
+        "NH3",
+        "NO",
+        "NO2",
+        "NOx",
+        "Ozone",
+        "PM10",
+        "PM2.5",
+        "SO2",
+        "Toluene"
+      ]
+    },
+    "Peenya_Oct2024": {
+      "station_id": "site_163",
+      "station_name": "Peenya",
+      "slice_month": "Oct2024",
+      "total_hourly_records": 8395,
+      "distinct_timestamps": 725,
+      "monitored_parameters": [
+        "Benzene",
+        "CO",
+        "MP-Xylene",
+        "NH3",
+        "NO",
+        "NO2",
+        "NOx",
+        "Ozone",
+        "PM10",
+        "PM2.5",
+        "SO2",
+        "Toluene"
+      ]
+    }
+  }
+}

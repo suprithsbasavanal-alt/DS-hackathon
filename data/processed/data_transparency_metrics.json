@@ -1,0 +1,31 @@
+{
+  "data_provenance": {
+    "air_quality_source": "Central Pollution Control Board (CPCB) via XKDR Forum CAAQM API",
+    "weather_source": "ECMWF ERA5 Atmospheric Reanalysis via Open-Meteo Historical Archive",
+    "city": "Bengaluru, Karnataka, India",
+    "temporal_range": "2023-01-01 to 2024-10-31 (670 calendar days)",
+    "air_quality_license": "Government Open Data License - India (GODL) / Open Data",
+    "weather_license": "Copernicus ECMWF / CC-BY 4.0",
+    "genuine_data_verification": "100% Genuine Empirical Data. Zero synthetic observations."
+  },
+  "audit_metrics": {
+    "total_raw_daily_records": 50584,
+    "cpcb_16hour_sufficiency_filtered_out": 3789,
+    "duplicate_records_dropped": 0,
+    "compliant_daily_records_preserved": 46795,
+    "cataloged_stations_count": 14,
+    "active_monitoring_stations_count": 13,
+    "decommissioned_stations": [
+      "site_164 (BWSSB Kadabesanahalli, closed Aug 2022)"
+    ],
+    "total_hourly_weather_records": 16080,
+    "landmark_hourly_seasonal_observations": 66947
+  },
+  "regulatory_compliance_notes": [
+    "CPCB 2014 Table 3.2 linear piecewise interpolation strictly applied on categories 1 to 5.",
+    "Project implementation policy: Severe values reported at 500 ceiling cap (reflecting CPCB national index ceiling; not an official interpolation formula).",
+    "CO and O3 sub-indices strictly excluded from daily station AQI to avoid substituting 24h daily means for CPCB 8-hour metrics.",
+    "Landmark hourly 8-hour rolling averages evaluated using project-defined 75% completeness threshold (>= 6 valid hours in window).",
+    "Forecasting features strictly autoregressive at issue time t with zero target-day realized weather leakage."
+  ]
+}

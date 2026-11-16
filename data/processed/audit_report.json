@@ -1,0 +1,329 @@
+{
+  "title": "BreatheWise Bengaluru Air Quality & Meteorological Dataset Audit",
+  "date_audit_conducted": "2026-11-16",
+  "stations_count": 14,
+  "total_raw_records": 50584,
+  "duplicates_removed": 0,
+  "unique_records": 50584,
+  "missing_mean_count": 0,
+  "temporal_range": {
+    "start": "2023-01-01",
+    "end": "2024-10-31",
+    "distinct_days": 670
+  },
+  "parameter_summary": [
+    {
+      "parameter": "CO",
+      "count": 7764,
+      "mean": 0.67,
+      "median": 0.59,
+      "min": 0.0,
+      "max": 4.94,
+      "p95": 1.41
+    },
+    {
+      "parameter": "NH3",
+      "count": 6234,
+      "mean": 11.75,
+      "median": 9.51,
+      "min": 0.01,
+      "max": 287.18,
+      "p95": 29.17
+    },
+    {
+      "parameter": "NO2",
+      "count": 7604,
+      "mean": 18.66,
+      "median": 17.29,
+      "min": 0.1,
+      "max": 347.04,
+      "p95": 35.5
+    },
+    {
+      "parameter": "Ozone",
+      "count": 6593,
+      "mean": 28.43,
+      "median": 25.17,
+      "min": 1.2,
+      "max": 120.04,
+      "p95": 59.25
+    },
+    {
+      "parameter": "PM10",
+      "count": 7812,
+      "mean": 69.57,
+      "median": 62.85,
+      "min": 6.03,
+      "max": 455.93,
+      "p95": 134.33
+    },
+    {
+      "parameter": "PM2.5",
+      "count": 6693,
+      "mean": 33.34,
+      "median": 27.57,
+      "min": 0.07,
+      "max": 893.0,
+      "p95": 66.94
+    },
+    {
+      "parameter": "SO2",
+      "count": 7884,
+      "mean": 7.86,
+      "median": 6.38,
+      "min": 0.04,
+      "max": 115.82,
+      "p95": 18.45
+    }
+  ],
+  "station_summary": [
+    {
+      "station_id": "site_1553",
+      "station_name": "Bapuji Nagar, Bengaluru - KSPCB",
+      "latitude": 12.951913,
+      "longitude": 77.539784,
+      "daily_records": 4560,
+      "parameters": [
+        "CO",
+        "NH3",
+        "NO2",
+        "Ozone",
+        "PM10",
+        "PM2.5",
+        "SO2"
+      ]
+    },
+    {
+      "station_id": "site_1554",
+      "station_name": "Hebbal, Bengaluru - KSPCB",
+      "latitude": 13.029152,
+      "longitude": 77.585901,
+      "daily_records": 4079,
+      "parameters": [
+        "CO",
+        "NH3",
+        "NO2",
+        "Ozone",
+        "PM10",
+        "PM2.5",
+        "SO2"
+      ]
+    },
+    {
+      "station_id": "site_1555",
+      "station_name": "Hombegowda Nagar, Bengaluru - KSPCB",
+      "latitude": 12.938539,
+      "longitude": 77.5901,
+      "daily_records": 4566,
+      "parameters": [
+        "CO",
+        "NH3",
+        "NO2",
+        "Ozone",
+        "PM10",
+        "PM2.5",
+        "SO2"
+      ]
+    },
+    {
+      "station_id": "site_1556",
+      "station_name": "Jayanagar 5th Block, Bengaluru - KSPCB",
+      "latitude": 12.920984,
+      "longitude": 77.584908,
+      "daily_records": 4461,
+      "parameters": [
+        "CO",
+        "NH3",
+        "NO2",
+        "Ozone",
+        "PM10",
+        "PM2.5",
+        "SO2"
+      ]
+    },
+    {
+      "station_id": "site_1558",
+      "station_name": "Silk Board, Bengaluru - KSPCB",
+      "latitude": 12.917348,
+      "longitude": 77.622813,
+      "daily_records": 4496,
+      "parameters": [
+        "CO",
+        "NH3",
+        "NO2",
+        "Ozone",
+        "PM10",
+        "PM2.5",
+        "SO2"
+      ]
+    },
+    {
+      "station_id": "site_162",
+      "station_name": "BTM Layout, Bengaluru - CPCB",
+      "latitude": 12.9135218,
+      "longitude": 77.5950804,
+      "daily_records": 4346,
+      "parameters": [
+        "CO",
+        "NH3",
+        "NO2",
+        "Ozone",
+        "PM10",
+        "PM2.5",
+        "SO2"
+      ]
+    },
+    {
+      "station_id": "site_163",
+      "station_name": "Peenya, Bengaluru - CPCB",
+      "latitude": 13.0270199,
+      "longitude": 77.494094,
+      "daily_records": 4116,
+      "parameters": [
+        "CO",
+        "NH3",
+        "NO2",
+        "Ozone",
+        "PM10",
+        "PM2.5",
+        "SO2"
+      ]
+    },
+    {
+      "station_id": "site_164",
+      "station_name": "BWSSB Kadabesanahalli, Bengaluru - CPCB",
+      "latitude": 12.9352049,
+      "longitude": 77.6814488,
+      "daily_records": 0,
+      "parameters": []
+    },
+    {
+      "station_id": "site_165",
+      "station_name": "City Railway Station, Bengaluru - KSPCB",
+      "latitude": 12.9756843,
+      "longitude": 77.5660749,
+      "daily_records": 2171,
+      "parameters": [
+        "CO",
+        "NO2",
+        "PM10",
+        "SO2"
+      ]
+    },
+    {
+      "station_id": "site_166",
+      "station_name": "Sanegurava Halli, Bengaluru - KSPCB",
+      "latitude": 12.990328,
+      "longitude": 77.5431385,
+      "daily_records": 2391,
+      "parameters": [
+        "CO",
+        "NO2",
+        "PM10",
+        "SO2"
+      ]
+    },
+    {
+      "station_id": "site_5678",
+      "station_name": "RVCE-Mailasandra, Bengaluru - KSPCB",
+      "latitude": 12.921418,
+      "longitude": 77.502466,
+      "daily_records": 3860,
+      "parameters": [
+        "CO",
+        "NH3",
+        "NO2",
+        "Ozone",
+        "PM10",
+        "PM2.5",
+        "SO2"
+      ]
+    },
+    {
+      "station_id": "site_5681",
+      "station_name": "Kasturi Nagar, Bengaluru - KSPCB",
+      "latitude": 13.003872,
+      "longitude": 77.664217,
+      "daily_records": 3857,
+      "parameters": [
+        "CO",
+        "NH3",
+        "NO2",
+        "Ozone",
+        "PM10",
+        "PM2.5",
+        "SO2"
+      ]
+    },
+    {
+      "station_id": "site_5686",
+      "station_name": "Shivapura_Peenya, Bengaluru - KSPCB",
+      "latitude": 13.0246342,
+      "longitude": 77.5080115,
+      "daily_records": 4144,
+      "parameters": [
+        "CO",
+        "NH3",
+        "NO2",
+        "Ozone",
+        "PM10",
+        "PM2.5",
+        "SO2"
+      ]
+    },
+    {
+      "station_id": "site_5729",
+      "station_name": "Jigani, Bengaluru - KSPCB",
+      "latitude": 12.7816279,
+      "longitude": 77.6299145,
+      "daily_records": 3537,
+      "parameters": [
+        "CO",
+        "NH3",
+        "NO2",
+        "Ozone",
+        "PM10",
+        "PM2.5",
+        "SO2"
+      ]
+    }
+  ],
+  "weather_summary": {
+    "temperature_2m": {
+      "count": 16080,
+      "mean": 23.94,
+      "min": 11.9,
+      "max": 39.5
+    },
+    "relative_humidity_2m": {
+      "count": 16080,
+      "mean": 67.89,
+      "min": 10,
+      "max": 100
+    },
+    "precipitation": {
+      "count": 16080,
+      "mean": 0.11,
+      "min": 0.0,
+      "max": 13.0
+    },
+    "wind_speed_10m": {
+      "count": 16080,
+      "mean": 12.6,
+      "min": 0.0,
+      "max": 39.3
+    },
+    "wind_direction_10m": {
+      "count": 16080,
+      "mean": 180.14,
+      "min": 1,
+      "max": 360
+    },
+    "surface_pressure": {
+      "count": 16080,
+      "mean": 912.06,
+      "min": 904.0,
+      "max": 920.9
+    }
+  }
+}

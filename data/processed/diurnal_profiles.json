@@ -1,0 +1,3066 @@
+{
+  "BTM Layout": {
+    "station_id": "site_162",
+    "diurnal_curves": {
+      "Benzene": [
+        {
+          "hour": 0,
+          "mean_concentration": 0.54,
+          "sample_count": 120
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 0.54,
+          "sample_count": 121
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 0.54,
+          "sample_count": 121
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 0.55,
+          "sample_count": 120
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 0.54,
+          "sample_count": 121
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 0.54,
+          "sample_count": 121
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 0.54,
+          "sample_count": 120
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 0.54,
+          "sample_count": 118
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 0.54,
+          "sample_count": 121
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 0.54,
+          "sample_count": 121
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 0.54,
+          "sample_count": 119
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 0.53,
+          "sample_count": 121
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 0.52,
+          "sample_count": 118
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 0.51,
+          "sample_count": 117
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 0.51,
+          "sample_count": 118
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 0.51,
+          "sample_count": 119
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 0.51,
+          "sample_count": 119
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 0.53,
+          "sample_count": 118
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 0.55,
+          "sample_count": 122
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 0.55,
+          "sample_count": 121
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 0.54,
+          "sample_count": 121
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 0.54,
+          "sample_count": 120
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 0.54,
+          "sample_count": 122
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 0.54,
+          "sample_count": 122
+        }
+      ],
+      "CO": [
+        {
+          "hour": 0,
+          "mean_concentration": 0.66,
+          "sample_count": 120
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 0.66,
+          "sample_count": 120
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 0.65,
+          "sample_count": 121
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 0.65,
+          "sample_count": 120
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 0.65,
+          "sample_count": 120
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 0.66,
+          "sample_count": 121
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 0.66,
+          "sample_count": 120
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 0.66,
+          "sample_count": 118
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 0.66,
+          "sample_count": 121
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 0.67,
+          "sample_count": 120
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 0.68,
+          "sample_count": 119
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 0.66,
+          "sample_count": 121
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 0.66,
+          "sample_count": 117
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 0.66,
+          "sample_count": 116
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 0.67,
+          "sample_count": 117
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 0.67,
+          "sample_count": 119
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 0.68,
+          "sample_count": 119
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 0.68,
+          "sample_count": 118
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 0.69,
+          "sample_count": 122
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 0.69,
+          "sample_count": 121
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 0.69,
+          "sample_count": 120
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 0.69,
+          "sample_count": 120
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 0.69,
+          "sample_count": 122
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 0.68,
+          "sample_count": 122
+        }
+      ],
+      "Eth-Benzene": [
+        {
+          "hour": 0,
+          "mean_concentration": 0.43,
+          "sample_count": 120
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 0.43,
+          "sample_count": 121
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 0.43,
+          "sample_count": 121
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 0.43,
+          "sample_count": 120
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 0.43,
+          "sample_count": 121
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 0.43,
+          "sample_count": 121
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 0.44,
+          "sample_count": 120
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 0.43,
+          "sample_count": 118
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 0.43,
+          "sample_count": 121
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 0.43,
+          "sample_count": 121
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 0.43,
+          "sample_count": 119
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 0.42,
+          "sample_count": 121
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 0.42,
+          "sample_count": 118
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 0.41,
+          "sample_count": 117
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 0.41,
+          "sample_count": 118
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 0.41,
+          "sample_count": 119
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 0.41,
+          "sample_count": 119
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 0.42,
+          "sample_count": 118
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 0.44,
+          "sample_count": 122
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 0.44,
+          "sample_count": 121
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 0.43,
+          "sample_count": 121
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 0.43,
+          "sample_count": 120
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 0.43,
+          "sample_count": 122
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 0.43,
+          "sample_count": 122
+        }
+      ],
+      "MP-Xylene": [
+        {
+          "hour": 0,
+          "mean_concentration": 0.34,
+          "sample_count": 120
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 0.33,
+          "sample_count": 121
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 0.33,
+          "sample_count": 121
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 0.33,
+          "sample_count": 120
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 0.33,
+          "sample_count": 121
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 0.33,
+          "sample_count": 121
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 0.34,
+          "sample_count": 120
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 0.34,
+          "sample_count": 118
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 0.33,
+          "sample_count": 121
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 0.33,
+          "sample_count": 121
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 0.33,
+          "sample_count": 119
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 0.33,
+          "sample_count": 121
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 0.32,
+          "sample_count": 118
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 0.32,
+          "sample_count": 117
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 0.32,
+          "sample_count": 118
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 0.32,
+          "sample_count": 119
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 0.32,
+          "sample_count": 119
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 0.33,
+          "sample_count": 118
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 0.33,
+          "sample_count": 122
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 0.34,
+          "sample_count": 121
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 0.34,
+          "sample_count": 121
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 0.33,
+          "sample_count": 120
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 0.34,
+          "sample_count": 122
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 0.33,
+          "sample_count": 122
+        }
+      ],
+      "NH3": [
+        {
+          "hour": 0,
+          "mean_concentration": 22.35,
+          "sample_count": 106
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 22.34,
+          "sample_count": 106
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 22.42,
+          "sample_count": 105
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 22.28,
+          "sample_count": 104
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 22.42,
+          "sample_count": 105
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 22.39,
+          "sample_count": 103
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 22.3,
+          "sample_count": 100
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 22.38,
+          "sample_count": 99
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 22.35,
+          "sample_count": 99
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 22.79,
+          "sample_count": 107
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 22.53,
+          "sample_count": 115
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 21.81,
+          "sample_count": 117
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 21.3,
+          "sample_count": 118
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 21.47,
+          "sample_count": 116
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 21.71,
+          "sample_count": 114
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 21.03,
+          "sample_count": 114
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 21.29,
+          "sample_count": 116
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 22.04,
+          "sample_count": 114
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 22.45,
+          "sample_count": 113
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 22.75,
+          "sample_count": 111
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 22.63,
+          "sample_count": 107
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 22.63,
+          "sample_count": 106
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 22.94,
+          "sample_count": 107
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 22.82,
+          "sample_count": 109
+        }
+      ],
+      "NO": [
+        {
+          "hour": 0,
+          "mean_concentration": 8.46,
+          "sample_count": 106
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 8.49,
+          "sample_count": 106
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 8.53,
+          "sample_count": 105
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 8.57,
+          "sample_count": 104
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 8.52,
+          "sample_count": 105
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 8.54,
+          "sample_count": 103
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 8.57,
+          "sample_count": 100
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 8.6,
+          "sample_count": 99
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 8.67,
+          "sample_count": 99
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 8.44,
+          "sample_count": 108
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 7.13,
+          "sample_count": 115
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 6.62,
+          "sample_count": 117
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 6.62,
+          "sample_count": 118
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 6.8,
+          "sample_count": 116
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 6.88,
+          "sample_count": 116
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 6.98,
+          "sample_count": 115
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 7.09,
+          "sample_count": 117
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 7.23,
+          "sample_count": 114
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 7.58,
+          "sample_count": 113
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 7.94,
+          "sample_count": 111
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 8.09,
+          "sample_count": 107
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 8.34,
+          "sample_count": 106
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 8.47,
+          "sample_count": 107
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 8.61,
+          "sample_count": 109
+        }
+      ],
+      "NO2": [
+        {
+          "hour": 0,
+          "mean_concentration": 35.61,
+          "sample_count": 106
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 35.63,
+          "sample_count": 106
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 35.78,
+          "sample_count": 105
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 35.84,
+          "sample_count": 104
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 35.69,
+          "sample_count": 105
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 35.76,
+          "sample_count": 103
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 35.85,
+          "sample_count": 100
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 36.09,
+          "sample_count": 99
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 36.33,
+          "sample_count": 99
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 35.57,
+          "sample_count": 108
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 31.23,
+          "sample_count": 115
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 29.67,
+          "sample_count": 117
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 29.87,
+          "sample_count": 118
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 30.67,
+          "sample_count": 116
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 31.04,
+          "sample_count": 116
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 31.31,
+          "sample_count": 115
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 31.75,
+          "sample_count": 117
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 32.19,
+          "sample_count": 114
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 33.0,
+          "sample_count": 113
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 34.31,
+          "sample_count": 111
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 34.71,
+          "sample_count": 107
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 35.4,
+          "sample_count": 106
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 35.62,
+          "sample_count": 107
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 36.11,
+          "sample_count": 109
+        }
+      ],
+      "NOx": [
+        {
+          "hour": 0,
+          "mean_concentration": 41.93,
+          "sample_count": 107
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 42.37,
+          "sample_count": 106
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 42.44,
+          "sample_count": 105
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 42.5,
+          "sample_count": 104
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 42.37,
+          "sample_count": 105
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 42.43,
+          "sample_count": 103
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 42.47,
+          "sample_count": 100
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 42.78,
+          "sample_count": 99
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 43.04,
+          "sample_count": 99
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 42.02,
+          "sample_count": 108
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 36.74,
+          "sample_count": 115
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 35.15,
+          "sample_count": 117
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 35.36,
+          "sample_count": 118
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 36.33,
+          "sample_count": 116
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 36.64,
+          "sample_count": 116
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 36.9,
+          "sample_count": 115
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 37.41,
+          "sample_count": 117
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 37.81,
+          "sample_count": 114
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 38.94,
+          "sample_count": 113
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 40.57,
+          "sample_count": 111
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 41.23,
+          "sample_count": 107
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 42.03,
+          "sample_count": 106
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 42.28,
+          "sample_count": 107
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 42.83,
+          "sample_count": 109
+        }
+      ],
+      "Ozone": [
+        {
+          "hour": 0,
+          "mean_concentration": 26.76,
+          "sample_count": 120
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 25.44,
+          "sample_count": 121
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 25.19,
+          "sample_count": 121
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 23.77,
+          "sample_count": 120
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 24.66,
+          "sample_count": 121
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 24.61,
+          "sample_count": 121
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 23.72,
+          "sample_count": 119
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 24.59,
+          "sample_count": 118
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 25.13,
+          "sample_count": 121
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 26.91,
+          "sample_count": 121
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 30.22,
+          "sample_count": 118
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 32.14,
+          "sample_count": 120
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 32.7,
+          "sample_count": 117
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 33.02,
+          "sample_count": 116
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 32.95,
+          "sample_count": 116
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 33.48,
+          "sample_count": 118
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 33.25,
+          "sample_count": 118
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 33.67,
+          "sample_count": 119
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 30.65,
+          "sample_count": 122
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 29.05,
+          "sample_count": 121
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 28.17,
+          "sample_count": 121
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 28.32,
+          "sample_count": 120
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 27.01,
+          "sample_count": 122
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 26.13,
+          "sample_count": 122
+        }
+      ],
+      "PM10": [
+        {
+          "hour": 0,
+          "mean_concentration": 61.27,
+          "sample_count": 116
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 63.26,
+          "sample_count": 116
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 58.8,
+          "sample_count": 117
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 57.54,
+          "sample_count": 115
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 61.99,
+          "sample_count": 116
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 62.99,
+          "sample_count": 117
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 58.3,
+          "sample_count": 116
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 63.6,
+          "sample_count": 114
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 65.49,
+          "sample_count": 116
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 64.32,
+          "sample_count": 116
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 61.59,
+          "sample_count": 115
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 49.51,
+          "sample_count": 115
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 47.67,
+          "sample_count": 109
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 47.77,
+          "sample_count": 111
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 47.77,
+          "sample_count": 111
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 47.19,
+          "sample_count": 112
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 46.78,
+          "sample_count": 112
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 49.83,
+          "sample_count": 113
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 50.19,
+          "sample_count": 115
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 54.31,
+          "sample_count": 115
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 62.77,
+          "sample_count": 115
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 71.84,
+          "sample_count": 115
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 70.3,
+          "sample_count": 117
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 67.18,
+          "sample_count": 117
+        }
+      ],
+      "PM2.5": [
+        {
+          "hour": 0,
+          "mean_concentration": 18.67,
+          "sample_count": 113
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 17.11,
+          "sample_count": 113
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 17.4,
+          "sample_count": 114
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 16.32,
+          "sample_count": 112
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 17.19,
+          "sample_count": 113
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 16.22,
+          "sample_count": 114
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 16.14,
+          "sample_count": 113
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 15.88,
+          "sample_count": 111
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 16.94,
+          "sample_count": 112
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 17.79,
+          "sample_count": 113
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 18.76,
+          "sample_count": 112
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 21.39,
+          "sample_count": 113
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 20.78,
+          "sample_count": 107
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 20.14,
+          "sample_count": 108
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 19.27,
+          "sample_count": 108
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 18.61,
+          "sample_count": 108
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 18.72,
+          "sample_count": 109
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 18.79,
+          "sample_count": 110
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 19.38,
+          "sample_count": 113
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 19.92,
+          "sample_count": 112
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 20.74,
+          "sample_count": 113
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 22.39,
+          "sample_count": 112
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 22.01,
+          "sample_count": 114
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 20.0,
+          "sample_count": 114
+        }
+      ],
+      "SO2": [
+        {
+          "hour": 0,
+          "mean_concentration": 9.26,
+          "sample_count": 120
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 9.29,
+          "sample_count": 121
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 9.32,
+          "sample_count": 120
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 9.21,
+          "sample_count": 120
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 9.26,
+          "sample_count": 121
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 9.23,
+          "sample_count": 121
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 9.29,
+          "sample_count": 120
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 9.28,
+          "sample_count": 118
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 9.24,
+          "sample_count": 121
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 9.26,
+          "sample_count": 121
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 9.36,
+          "sample_count": 119
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 9.73,
+          "sample_count": 120
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 9.72,
+          "sample_count": 116
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 9.59,
+          "sample_count": 115
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 9.4,
+          "sample_count": 116
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 9.13,
+          "sample_count": 117
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 8.9,
+          "sample_count": 117
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 9.14,
+          "sample_count": 119
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 9.38,
+          "sample_count": 120
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 9.21,
+          "sample_count": 121
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 9.28,
+          "sample_count": 120
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 9.34,
+          "sample_count": 119
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 9.31,
+          "sample_count": 122
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 9.31,
+          "sample_count": 122
+        }
+      ],
+      "Toluene": [
+        {
+          "hour": 0,
+          "mean_concentration": 1.47,
+          "sample_count": 120
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 1.47,
+          "sample_count": 121
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 1.48,
+          "sample_count": 121
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 1.48,
+          "sample_count": 120
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 1.48,
+          "sample_count": 121
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 1.48,
+          "sample_count": 121
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 1.47,
+          "sample_count": 120
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 1.47,
+          "sample_count": 118
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 1.48,
+          "sample_count": 121
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 1.47,
+          "sample_count": 121
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 1.48,
+          "sample_count": 119
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 1.43,
+          "sample_count": 121
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 1.4,
+          "sample_count": 118
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 1.36,
+          "sample_count": 117
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 1.36,
+          "sample_count": 118
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 1.37,
+          "sample_count": 119
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 1.38,
+          "sample_count": 119
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 1.44,
+          "sample_count": 118
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 1.48,
+          "sample_count": 122
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 1.49,
+          "sample_count": 121
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 1.48,
+          "sample_count": 121
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 1.48,
+          "sample_count": 120
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 1.47,
+          "sample_count": 122
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 1.47,
+          "sample_count": 122
+        }
+      ]
+    },
+    "sampling_scope": "Landmark seasonal benchmark: Jan, Apr, Jul, Oct 2024 (66,947 raw records)",
+    "notes": "Descriptive empirical observations recorded specifically at this monitoring station; not extrapolated citywide."
+  },
+  "Peenya": {
+    "station_id": "site_163",
+    "diurnal_curves": {
+      "Benzene": [
+        {
+          "hour": 0,
+          "mean_concentration": 0.63,
+          "sample_count": 108
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 0.61,
+          "sample_count": 108
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 0.6,
+          "sample_count": 109
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 0.59,
+          "sample_count": 109
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 0.58,
+          "sample_count": 110
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 0.58,
+          "sample_count": 109
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 0.58,
+          "sample_count": 109
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 0.59,
+          "sample_count": 111
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 0.59,
+          "sample_count": 111
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 0.61,
+          "sample_count": 111
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 0.64,
+          "sample_count": 111
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 0.67,
+          "sample_count": 113
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 0.73,
+          "sample_count": 113
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 0.71,
+          "sample_count": 115
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 0.78,
+          "sample_count": 114
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 0.82,
+          "sample_count": 112
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 0.77,
+          "sample_count": 112
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 0.96,
+          "sample_count": 112
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 0.84,
+          "sample_count": 111
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 0.92,
+          "sample_count": 111
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 0.81,
+          "sample_count": 110
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 0.77,
+          "sample_count": 110
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 0.69,
+          "sample_count": 110
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 0.65,
+          "sample_count": 108
+        }
+      ],
+      "CO": [
+        {
+          "hour": 0,
+          "mean_concentration": 1.04,
+          "sample_count": 108
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 1.02,
+          "sample_count": 108
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 1.02,
+          "sample_count": 108
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 1.03,
+          "sample_count": 108
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 1.08,
+          "sample_count": 108
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 1.09,
+          "sample_count": 109
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 1.11,
+          "sample_count": 109
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 1.12,
+          "sample_count": 110
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 1.14,
+          "sample_count": 110
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 1.11,
+          "sample_count": 110
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 1.08,
+          "sample_count": 109
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 1.09,
+          "sample_count": 113
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 1.14,
+          "sample_count": 114
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 1.15,
+          "sample_count": 114
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 1.2,
+          "sample_count": 114
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 1.21,
+          "sample_count": 113
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 1.24,
+          "sample_count": 112
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 1.3,
+          "sample_count": 112
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 1.31,
+          "sample_count": 111
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 1.26,
+          "sample_count": 111
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 1.18,
+          "sample_count": 110
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 1.14,
+          "sample_count": 110
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 1.12,
+          "sample_count": 110
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 1.09,
+          "sample_count": 108
+        }
+      ],
+      "MP-Xylene": [
+        {
+          "hour": 0,
+          "mean_concentration": 0.68,
+          "sample_count": 98
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 0.58,
+          "sample_count": 98
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 0.54,
+          "sample_count": 99
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 0.5,
+          "sample_count": 99
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 0.5,
+          "sample_count": 100
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 0.5,
+          "sample_count": 99
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 0.49,
+          "sample_count": 99
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 0.54,
+          "sample_count": 101
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 0.55,
+          "sample_count": 101
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 0.52,
+          "sample_count": 105
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 0.58,
+          "sample_count": 106
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 0.59,
+          "sample_count": 109
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 0.85,
+          "sample_count": 112
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 0.88,
+          "sample_count": 111
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 0.73,
+          "sample_count": 112
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 0.82,
+          "sample_count": 110
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 1.36,
+          "sample_count": 110
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 1.08,
+          "sample_count": 110
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 0.89,
+          "sample_count": 108
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 0.99,
+          "sample_count": 106
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 0.76,
+          "sample_count": 103
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 0.63,
+          "sample_count": 101
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 0.54,
+          "sample_count": 101
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 0.52,
+          "sample_count": 99
+        }
+      ],
+      "NH3": [
+        {
+          "hour": 0,
+          "mean_concentration": 16.63,
+          "sample_count": 106
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 16.69,
+          "sample_count": 106
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 16.67,
+          "sample_count": 107
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 16.73,
+          "sample_count": 107
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 16.76,
+          "sample_count": 107
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 16.91,
+          "sample_count": 107
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 16.76,
+          "sample_count": 107
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 16.89,
+          "sample_count": 109
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 16.56,
+          "sample_count": 109
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 16.74,
+          "sample_count": 109
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 16.67,
+          "sample_count": 108
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 18.23,
+          "sample_count": 114
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 19.11,
+          "sample_count": 115
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 20.97,
+          "sample_count": 114
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 21.68,
+          "sample_count": 115
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 18.38,
+          "sample_count": 113
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 17.93,
+          "sample_count": 113
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 17.12,
+          "sample_count": 111
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 16.55,
+          "sample_count": 110
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 16.46,
+          "sample_count": 110
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 16.58,
+          "sample_count": 109
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 16.61,
+          "sample_count": 109
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 16.84,
+          "sample_count": 109
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 16.66,
+          "sample_count": 107
+        }
+      ],
+      "NO": [
+        {
+          "hour": 0,
+          "mean_concentration": 6.97,
+          "sample_count": 106
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 7.04,
+          "sample_count": 106
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 7.17,
+          "sample_count": 107
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 7.15,
+          "sample_count": 107
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 7.34,
+          "sample_count": 107
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 7.34,
+          "sample_count": 107
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 7.25,
+          "sample_count": 107
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 7.38,
+          "sample_count": 109
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 7.13,
+          "sample_count": 109
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 7.39,
+          "sample_count": 109
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 7.3,
+          "sample_count": 108
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 9.75,
+          "sample_count": 114
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 9.44,
+          "sample_count": 115
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 11.3,
+          "sample_count": 114
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 11.72,
+          "sample_count": 115
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 8.41,
+          "sample_count": 113
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 7.77,
+          "sample_count": 113
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 7.36,
+          "sample_count": 111
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 6.77,
+          "sample_count": 110
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 6.7,
+          "sample_count": 110
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 6.91,
+          "sample_count": 109
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 6.88,
+          "sample_count": 109
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 7.12,
+          "sample_count": 109
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 6.94,
+          "sample_count": 107
+        }
+      ],
+      "NO2": [
+        {
+          "hour": 0,
+          "mean_concentration": 22.81,
+          "sample_count": 106
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 23.01,
+          "sample_count": 106
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 23.12,
+          "sample_count": 107
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 23.0,
+          "sample_count": 107
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 23.51,
+          "sample_count": 107
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 23.36,
+          "sample_count": 107
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 23.39,
+          "sample_count": 107
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 23.62,
+          "sample_count": 109
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 23.27,
+          "sample_count": 109
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 23.68,
+          "sample_count": 109
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 24.05,
+          "sample_count": 108
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 29.08,
+          "sample_count": 114
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 25.66,
+          "sample_count": 115
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 25.72,
+          "sample_count": 113
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 26.03,
+          "sample_count": 114
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 25.83,
+          "sample_count": 113
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 24.15,
+          "sample_count": 113
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 23.07,
+          "sample_count": 111
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 21.63,
+          "sample_count": 110
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 21.56,
+          "sample_count": 110
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 22.43,
+          "sample_count": 109
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 22.45,
+          "sample_count": 109
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 22.84,
+          "sample_count": 109
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 22.4,
+          "sample_count": 107
+        }
+      ],
+      "NOx": [
+        {
+          "hour": 0,
+          "mean_concentration": 28.04,
+          "sample_count": 106
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 28.36,
+          "sample_count": 106
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 28.68,
+          "sample_count": 107
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 28.63,
+          "sample_count": 107
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 29.0,
+          "sample_count": 107
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 28.82,
+          "sample_count": 107
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 28.94,
+          "sample_count": 107
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 28.79,
+          "sample_count": 109
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 28.74,
+          "sample_count": 109
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 29.38,
+          "sample_count": 109
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 29.63,
+          "sample_count": 108
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 31.26,
+          "sample_count": 114
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 31.73,
+          "sample_count": 115
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 31.53,
+          "sample_count": 112
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 32.29,
+          "sample_count": 114
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 32.13,
+          "sample_count": 113
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 30.38,
+          "sample_count": 113
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 29.34,
+          "sample_count": 111
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 27.27,
+          "sample_count": 110
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 26.91,
+          "sample_count": 110
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 27.91,
+          "sample_count": 109
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 27.66,
+          "sample_count": 109
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 28.25,
+          "sample_count": 109
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 27.84,
+          "sample_count": 107
+        }
+      ],
+      "Ozone": [
+        {
+          "hour": 0,
+          "mean_concentration": 26.92,
+          "sample_count": 101
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 26.68,
+          "sample_count": 101
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 26.74,
+          "sample_count": 101
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 26.28,
+          "sample_count": 101
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 25.96,
+          "sample_count": 101
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 25.51,
+          "sample_count": 100
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 24.79,
+          "sample_count": 100
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 25.08,
+          "sample_count": 101
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 25.95,
+          "sample_count": 101
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 27.77,
+          "sample_count": 101
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 30.22,
+          "sample_count": 100
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 31.95,
+          "sample_count": 106
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 32.62,
+          "sample_count": 106
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 33.44,
+          "sample_count": 107
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 32.68,
+          "sample_count": 107
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 31.55,
+          "sample_count": 105
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 30.78,
+          "sample_count": 104
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 30.51,
+          "sample_count": 106
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 29.71,
+          "sample_count": 104
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 27.74,
+          "sample_count": 104
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 26.86,
+          "sample_count": 103
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 26.92,
+          "sample_count": 103
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 27.05,
+          "sample_count": 103
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 26.99,
+          "sample_count": 101
+        }
+      ],
+      "PM10": [
+        {
+          "hour": 0,
+          "mean_concentration": 70.87,
+          "sample_count": 103
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 66.72,
+          "sample_count": 103
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 65.25,
+          "sample_count": 104
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 62.73,
+          "sample_count": 104
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 60.2,
+          "sample_count": 104
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 58.64,
+          "sample_count": 104
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 58.85,
+          "sample_count": 104
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 60.24,
+          "sample_count": 106
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 63.27,
+          "sample_count": 105
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 64.31,
+          "sample_count": 105
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 64.11,
+          "sample_count": 104
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 62.44,
+          "sample_count": 106
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 65.82,
+          "sample_count": 105
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 66.31,
+          "sample_count": 108
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 65.75,
+          "sample_count": 108
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 66.39,
+          "sample_count": 106
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 65.82,
+          "sample_count": 106
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 67.0,
+          "sample_count": 106
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 68.01,
+          "sample_count": 106
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 73.5,
+          "sample_count": 106
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 76.43,
+          "sample_count": 105
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 76.97,
+          "sample_count": 105
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 74.67,
+          "sample_count": 105
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 75.07,
+          "sample_count": 104
+        }
+      ],
+      "PM2.5": [
+        {
+          "hour": 0,
+          "mean_concentration": 32.62,
+          "sample_count": 101
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 31.14,
+          "sample_count": 101
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 30.25,
+          "sample_count": 102
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 28.89,
+          "sample_count": 102
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 28.1,
+          "sample_count": 102
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 27.51,
+          "sample_count": 102
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 27.1,
+          "sample_count": 102
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 27.89,
+          "sample_count": 104
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 29.8,
+          "sample_count": 103
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 29.8,
+          "sample_count": 103
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 29.28,
+          "sample_count": 104
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 27.46,
+          "sample_count": 105
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 29.79,
+          "sample_count": 104
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 29.48,
+          "sample_count": 106
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 29.93,
+          "sample_count": 106
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 30.2,
+          "sample_count": 105
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 29.43,
+          "sample_count": 104
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 30.71,
+          "sample_count": 105
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 31.38,
+          "sample_count": 104
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 33.71,
+          "sample_count": 104
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 34.55,
+          "sample_count": 103
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 34.98,
+          "sample_count": 103
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 33.8,
+          "sample_count": 103
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 34.05,
+          "sample_count": 102
+        }
+      ],
+      "SO2": [
+        {
+          "hour": 0,
+          "mean_concentration": 9.7,
+          "sample_count": 100
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 9.76,
+          "sample_count": 99
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 9.74,
+          "sample_count": 100
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 9.97,
+          "sample_count": 100
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 9.89,
+          "sample_count": 100
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 9.66,
+          "sample_count": 100
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 9.74,
+          "sample_count": 99
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 9.73,
+          "sample_count": 100
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 9.82,
+          "sample_count": 99
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 10.03,
+          "sample_count": 100
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 9.88,
+          "sample_count": 98
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 9.86,
+          "sample_count": 103
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 9.85,
+          "sample_count": 103
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 10.05,
+          "sample_count": 105
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 9.87,
+          "sample_count": 108
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 9.55,
+          "sample_count": 106
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 9.28,
+          "sample_count": 104
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 9.18,
+          "sample_count": 105
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 9.52,
+          "sample_count": 104
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 9.2,
+          "sample_count": 103
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 9.34,
+          "sample_count": 103
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 9.76,
+          "sample_count": 102
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 9.52,
+          "sample_count": 103
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 9.58,
+          "sample_count": 101
+        }
+      ],
+      "Toluene": [
+        {
+          "hour": 0,
+          "mean_concentration": 2.79,
+          "sample_count": 109
+        },
+        {
+          "hour": 1,
+          "mean_concentration": 2.55,
+          "sample_count": 109
+        },
+        {
+          "hour": 2,
+          "mean_concentration": 2.36,
+          "sample_count": 110
+        },
+        {
+          "hour": 3,
+          "mean_concentration": 2.28,
+          "sample_count": 110
+        },
+        {
+          "hour": 4,
+          "mean_concentration": 2.26,
+          "sample_count": 111
+        },
+        {
+          "hour": 5,
+          "mean_concentration": 2.29,
+          "sample_count": 110
+        },
+        {
+          "hour": 6,
+          "mean_concentration": 2.31,
+          "sample_count": 110
+        },
+        {
+          "hour": 7,
+          "mean_concentration": 2.36,
+          "sample_count": 112
+        },
+        {
+          "hour": 8,
+          "mean_concentration": 2.47,
+          "sample_count": 112
+        },
+        {
+          "hour": 9,
+          "mean_concentration": 2.41,
+          "sample_count": 112
+        },
+        {
+          "hour": 10,
+          "mean_concentration": 2.56,
+          "sample_count": 112
+        },
+        {
+          "hour": 11,
+          "mean_concentration": 2.67,
+          "sample_count": 114
+        },
+        {
+          "hour": 12,
+          "mean_concentration": 2.21,
+          "sample_count": 115
+        },
+        {
+          "hour": 13,
+          "mean_concentration": 2.3,
+          "sample_count": 116
+        },
+        {
+          "hour": 14,
+          "mean_concentration": 2.45,
+          "sample_count": 115
+        },
+        {
+          "hour": 15,
+          "mean_concentration": 2.63,
+          "sample_count": 113
+        },
+        {
+          "hour": 16,
+          "mean_concentration": 2.17,
+          "sample_count": 113
+        },
+        {
+          "hour": 17,
+          "mean_concentration": 2.8,
+          "sample_count": 113
+        },
+        {
+          "hour": 18,
+          "mean_concentration": 2.19,
+          "sample_count": 112
+        },
+        {
+          "hour": 19,
+          "mean_concentration": 2.57,
+          "sample_count": 112
+        },
+        {
+          "hour": 20,
+          "mean_concentration": 2.6,
+          "sample_count": 111
+        },
+        {
+          "hour": 21,
+          "mean_concentration": 2.63,
+          "sample_count": 111
+        },
+        {
+          "hour": 22,
+          "mean_concentration": 2.52,
+          "sample_count": 111
+        },
+        {
+          "hour": 23,
+          "mean_concentration": 2.58,
+          "sample_count": 109
+        }
+      ]
+    },
+    "sampling_scope": "Landmark seasonal benchmark: Jan, Apr, Jul, Oct 2024 (66,947 raw records)",
+    "notes": "Descriptive empirical observations recorded specifically at this monitoring station; not extrapolated citywide."
+  }
+}

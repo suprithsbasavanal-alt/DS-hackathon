@@ -1,0 +1,1074 @@
+{
+  "evaluation_protocol": {
+    "split_type": "Chronological (Time-Series Split)",
+    "train_period": "2023-01-08 to 2024-06-30",
+    "test_period": "2024-07-01 to 2024-10-31",
+    "train_samples_count": 546,
+    "test_samples_count": 123,
+    "target_variable": "City Composite AQI at day t+1",
+    "anti_leakage_guarantee": "Strictly autoregressive at issue time t. Zero target-day realized weather features utilized."
+  },
+  "scientific_reconciliation_note": "We evaluate both the Two-Stage Physical Concentration Model (predicting PM2.5 & PM10, then computing AQI deterministically) and Direct AQI Regression alongside Persistence. Both ML approaches achieve ~7.6-7.8 MAE, demonstrating that in high-autocorrelation environments, the Persistence baseline (MAE 7.42) remains an exceptionally tough benchmark to beat. We present these results transparently in the Forecast Arena without artificial exaggeration.",
+  "model_comparison": [
+    {
+      "model_name": "Persistence Baseline",
+      "description": "Predicts tomorrow's AQI equals today's AQI (AQI_t). Strong natural benchmark.",
+      "mae": 7.42,
+      "rmse": 10.49,
+      "r2": 0.733,
+      "mape": 12.94
+    },
+    {
+      "model_name": "Direct AQI Random Forest",
+      "description": "Predicts AQI directly from autoregressive AQI, criteria pollutant, and weather lags.",
+      "mae": 7.74,
+      "rmse": 11.14,
+      "r2": 0.699,
+      "mape": 13.77
+    },
+    {
+      "model_name": "Two-Stage Physical Model (PRD Design)",
+      "description": "Predicts physical PM2.5 & PM10 concentrations, then calculates AQI deterministically via CPCB formula.",
+      "mae": 7.91,
+      "rmse": 12.43,
+      "r2": 0.625,
+      "mape": 13.69
+    },
+    {
+      "model_name": "7-Day Moving Average",
+      "description": "Predicts next day as the trailing 7-day mean. Struggles during seasonal transitions.",
+      "mae": 9.2,
+      "rmse": 15.08,
+      "r2": 0.449,
+      "mape": 15.17
+    }
+  ],
+  "top_features": [
+    {
+      "feature": "aqi_lag_1",
+      "importance": 0.4746,
+      "label": "Aqi Lag 1"
+    },
+    {
+      "feature": "pm10_lag_1",
+      "importance": 0.2148,
+      "label": "Pm10 Lag 1"
+    },
+    {
+      "feature": "pm25_lag_1",
+      "importance": 0.147,
+      "label": "Pm25 Lag 1"
+    },
+    {
+      "feature": "humidity_lag_1",
+      "importance": 0.0171,
+      "label": "Humidity Lag 1"
+    },
+    {
+      "feature": "temp_lag_1",
+      "importance": 0.0153,
+      "label": "Temp Lag 1"
+    },
+    {
+      "feature": "pressure_lag_1",
+      "importance": 0.0144,
+      "label": "Pressure Lag 1"
+    },
+    {
+      "feature": "no2_lag_1",
+      "importance": 0.014,
+      "label": "No2 Lag 1"
+    },
+    {
+      "feature": "aqi_lag_7",
+      "importance": 0.014,
+      "label": "Aqi Lag 7"
+    }
+  ],
+  "test_timeline": [
+    {
+      "target_date": "2024-07-01",
+      "actual_aqi": 44,
+      "persistence_pred": 50.0,
+      "direct_rf_pred": 47.4,
+      "physical_derived_pred": 46.6,
+      "moving_avg_pred": 47.0
+    },
+    {
+      "target_date": "2024-07-02",
+      "actual_aqi": 42,
+      "persistence_pred": 44.0,
+      "direct_rf_pred": 43.1,
+      "physical_derived_pred": 41.9,
+      "moving_avg_pred": 47.6
+    },
+    {
+      "target_date": "2024-07-03",
+      "actual_aqi": 49,
+      "persistence_pred": 42.0,
+      "direct_rf_pred": 45.0,
+      "physical_derived_pred": 45.5,
+      "moving_avg_pred": 47.0
+    },
+    {
+      "target_date": "2024-07-04",
+      "actual_aqi": 47,
+      "persistence_pred": 49.0,
+      "direct_rf_pred": 47.6,
+      "physical_derived_pred": 46.9,
+      "moving_avg_pred": 47.9
+    },
+    {
+      "target_date": "2024-07-05",
+      "actual_aqi": 47,
+      "persistence_pred": 47.0,
+      "direct_rf_pred": 46.6,
+      "physical_derived_pred": 45.7,
+      "moving_avg_pred": 48.4
+    },
+    {
+      "target_date": "2024-07-06",
+      "actual_aqi": 57,
+      "persistence_pred": 47.0,
+      "direct_rf_pred": 46.9,
+      "physical_derived_pred": 46.2,
+      "moving_avg_pred": 47.6
+    },
+    {
+      "target_date": "2024-07-07",
+      "actual_aqi": 46,
+      "persistence_pred": 57.0,
+      "direct_rf_pred": 56.1,
+      "physical_derived_pred": 54.7,
+      "moving_avg_pred": 48.0
+    },
+    {
+      "target_date": "2024-07-08",
+      "actual_aqi": 45,
+      "persistence_pred": 46.0,
+      "direct_rf_pred": 52.6,
+      "physical_derived_pred": 47.5,
+      "moving_avg_pred": 47.4
+    },
+    {
+      "target_date": "2024-07-09",
+      "actual_aqi": 48,
+      "persistence_pred": 45.0,
+      "direct_rf_pred": 46.0,
+      "physical_derived_pred": 44.6,
+      "moving_avg_pred": 47.6
+    },
+    {
+      "target_date": "2024-07-10",
+      "actual_aqi": 52,
+      "persistence_pred": 48.0,
+      "direct_rf_pred": 50.7,
+      "physical_derived_pred": 48.3,
+      "moving_avg_pred": 48.4
+    },
+    {
+      "target_date": "2024-07-11",
+      "actual_aqi": 52,
+      "persistence_pred": 52.0,
+      "direct_rf_pred": 52.0,
+      "physical_derived_pred": 49.6,
+      "moving_avg_pred": 48.9
+    },
+    {
+      "target_date": "2024-07-12",
+      "actual_aqi": 48,
+      "persistence_pred": 52.0,
+      "direct_rf_pred": 50.7,
+      "physical_derived_pred": 49.0,
+      "moving_avg_pred": 49.6
+    },
+    {
+      "target_date": "2024-07-13",
+      "actual_aqi": 48,
+      "persistence_pred": 48.0,
+      "direct_rf_pred": 48.5,
+      "physical_derived_pred": 47.7,
+      "moving_avg_pred": 49.7
+    },
+    {
+      "target_date": "2024-07-14",
+      "actual_aqi": 44,
+      "persistence_pred": 48.0,
+      "direct_rf_pred": 49.0,
+      "physical_derived_pred": 48.0,
+      "moving_avg_pred": 48.4
+    },
+    {
+      "target_date": "2024-07-15",
+      "actual_aqi": 36,
+      "persistence_pred": 44.0,
+      "direct_rf_pred": 45.7,
+      "physical_derived_pred": 43.2,
+      "moving_avg_pred": 48.1
+    },
+    {
+      "target_date": "2024-07-16",
+      "actual_aqi": 41,
+      "persistence_pred": 36.0,
+      "direct_rf_pred": 37.8,
+      "physical_derived_pred": 37.1,
+      "moving_avg_pred": 46.9
+    },
+    {
+      "target_date": "2024-07-17",
+      "actual_aqi": 48,
+      "persistence_pred": 41.0,
+      "direct_rf_pred": 51.7,
+      "physical_derived_pred": 49.3,
+      "moving_avg_pred": 45.9
+    },
+    {
+      "target_date": "2024-07-18",
+      "actual_aqi": 39,
+      "persistence_pred": 48.0,
+      "direct_rf_pred": 46.0,
+      "physical_derived_pred": 45.9,
+      "moving_avg_pred": 45.3
+    },
+    {
+      "target_date": "2024-07-19",
+      "actual_aqi": 36,
+      "persistence_pred": 39.0,
+      "direct_rf_pred": 48.6,
+      "physical_derived_pred": 46.5,
+      "moving_avg_pred": 43.4
+    },
+    {
+      "target_date": "2024-07-20",
+      "actual_aqi": 52,
+      "persistence_pred": 36.0,
+      "direct_rf_pred": 38.9,
+      "physical_derived_pred": 40.0,
+      "moving_avg_pred": 41.7
+    },
+    {
+      "target_date": "2024-07-21",
+      "actual_aqi": 48,
+      "persistence_pred": 52.0,
+      "direct_rf_pred": 56.6,
+      "physical_derived_pred": 60.8,
+      "moving_avg_pred": 42.3
+    },
+    {
+      "target_date": "2024-07-22",
+      "actual_aqi": 47,
+      "persistence_pred": 48.0,
+      "direct_rf_pred": 47.0,
+      "physical_derived_pred": 46.8,
+      "moving_avg_pred": 42.9
+    },
+    {
+      "target_date": "2024-07-23",
+      "actual_aqi": 49,
+      "persistence_pred": 47.0,
+      "direct_rf_pred": 48.4,
+      "physical_derived_pred": 47.9,
+      "moving_avg_pred": 44.4
+    },
+    {
+      "target_date": "2024-07-24",
+      "actual_aqi": 45,
+      "persistence_pred": 49.0,
+      "direct_rf_pred": 51.3,
+      "physical_derived_pred": 51.6,
+      "moving_avg_pred": 45.6
+    },
+    {
+      "target_date": "2024-07-25",
+      "actual_aqi": 43,
+      "persistence_pred": 45.0,
+      "direct_rf_pred": 50.6,
+      "physical_derived_pred": 48.9,
+      "moving_avg_pred": 45.1
+    },
+    {
+      "target_date": "2024-07-26",
+      "actual_aqi": 49,
+      "persistence_pred": 43.0,
+      "direct_rf_pred": 50.1,
+      "physical_derived_pred": 50.0,
+      "moving_avg_pred": 45.7
+    },
+    {
+      "target_date": "2024-07-27",
+      "actual_aqi": 50,
+      "persistence_pred": 49.0,
+      "direct_rf_pred": 52.1,
+      "physical_derived_pred": 51.5,
+      "moving_avg_pred": 47.6
+    },
+    {
+      "target_date": "2024-07-28",
+      "actual_aqi": 52,
+      "persistence_pred": 50.0,
+      "direct_rf_pred": 48.6,
+      "physical_derived_pred": 47.7,
+      "moving_avg_pred": 47.3
+    },
+    {
+      "target_date": "2024-07-29",
+      "actual_aqi": 56,
+      "persistence_pred": 52.0,
+      "direct_rf_pred": 53.4,
+      "physical_derived_pred": 51.6,
+      "moving_avg_pred": 47.9
+    },
+    {
+      "target_date": "2024-07-30",
+      "actual_aqi": 44,
+      "persistence_pred": 56.0,
+      "direct_rf_pred": 55.1,
+      "physical_derived_pred": 54.4,
+      "moving_avg_pred": 49.1
+    },
+    {
+      "target_date": "2024-07-31",
+      "actual_aqi": 52,
+      "persistence_pred": 44.0,
+      "direct_rf_pred": 44.5,
+      "physical_derived_pred": 43.4,
+      "moving_avg_pred": 48.4
+    },
+    {
+      "target_date": "2024-08-01",
+      "actual_aqi": 47,
+      "persistence_pred": 52.0,
+      "direct_rf_pred": 54.2,
+      "physical_derived_pred": 51.9,
+      "moving_avg_pred": 49.4
+    },
+    {
+      "target_date": "2024-08-02",
+      "actual_aqi": 43,
+      "persistence_pred": 47.0,
+      "direct_rf_pred": 46.1,
+      "physical_derived_pred": 46.2,
+      "moving_avg_pred": 50.0
+    },
+    {
+      "target_date": "2024-08-03",
+      "actual_aqi": 52,
+      "persistence_pred": 43.0,
+      "direct_rf_pred": 43.9,
+      "physical_derived_pred": 43.3,
+      "moving_avg_pred": 49.1
+    },
+    {
+      "target_date": "2024-08-04",
+      "actual_aqi": 46,
+      "persistence_pred": 52.0,
+      "direct_rf_pred": 54.3,
+      "physical_derived_pred": 55.1,
+      "moving_avg_pred": 49.4
+    },
+    {
+      "target_date": "2024-08-05",
+      "actual_aqi": 52,
+      "persistence_pred": 46.0,
+      "direct_rf_pred": 47.7,
+      "physical_derived_pred": 46.3,
+      "moving_avg_pred": 48.6
+    },
+    {
+      "target_date": "2024-08-06",
+      "actual_aqi": 42,
+      "persistence_pred": 52.0,
+      "direct_rf_pred": 53.0,
+      "physical_derived_pred": 51.7,
+      "moving_avg_pred": 48.0
+    },
+    {
+      "target_date": "2024-08-07",
+      "actual_aqi": 53,
+      "persistence_pred": 42.0,
+      "direct_rf_pred": 47.1,
+      "physical_derived_pred": 45.2,
+      "moving_avg_pred": 47.7
+    },
+    {
+      "target_date": "2024-08-08",
+      "actual_aqi": 56,
+      "persistence_pred": 53.0,
+      "direct_rf_pred": 60.4,
+      "physical_derived_pred": 56.4,
+      "moving_avg_pred": 47.9
+    },
+    {
+      "target_date": "2024-08-09",
+      "actual_aqi": 63,
+      "persistence_pred": 56.0,
+      "direct_rf_pred": 58.7,
+      "physical_derived_pred": 58.0,
+      "moving_avg_pred": 49.1
+    },
+    {
+      "target_date": "2024-08-10",
+      "actual_aqi": 57,
+      "persistence_pred": 63.0,
+      "direct_rf_pred": 58.2,
+      "physical_derived_pred": 57.5,
+      "moving_avg_pred": 52.0
+    },
+    {
+      "target_date": "2024-08-11",
+      "actual_aqi": 58,
+      "persistence_pred": 57.0,
+      "direct_rf_pred": 56.1,
+      "physical_derived_pred": 56.3,
+      "moving_avg_pred": 52.7
+    },
+    {
+      "target_date": "2024-08-12",
+      "actual_aqi": 69,
+      "persistence_pred": 58.0,
+      "direct_rf_pred": 56.5,
+      "physical_derived_pred": 57.0,
+      "moving_avg_pred": 54.4
+    },
+    {
+      "target_date": "2024-08-13",
+      "actual_aqi": 65,
+      "persistence_pred": 69.0,
+      "direct_rf_pred": 60.6,
+      "physical_derived_pred": 62.7,
+      "moving_avg_pred": 56.9
+    },
+    {
+      "target_date": "2024-08-14",
+      "actual_aqi": 82,
+      "persistence_pred": 65.0,
+      "direct_rf_pred": 59.1,
+      "physical_derived_pred": 59.9,
+      "moving_avg_pred": 60.1
+    },
+    {
+      "target_date": "2024-08-15",
+      "actual_aqi": 60,
+      "persistence_pred": 82.0,
+      "direct_rf_pred": 74.1,
+      "physical_derived_pred": 75.5,
+      "moving_avg_pred": 64.3
+    },
+    {
+      "target_date": "2024-08-16",
+      "actual_aqi": 72,
+      "persistence_pred": 60.0,
+      "direct_rf_pred": 59.4,
+      "physical_derived_pred": 58.0,
+      "moving_avg_pred": 64.9
+    },
+    {
+      "target_date": "2024-08-17",
+      "actual_aqi": 82,
+      "persistence_pred": 72.0,
+      "direct_rf_pred": 62.6,
+      "physical_derived_pred": 62.1,
+      "moving_avg_pred": 66.1
+    },
+    {
+      "target_date": "2024-08-18",
+      "actual_aqi": 48,
+      "persistence_pred": 82.0,
+      "direct_rf_pred": 68.4,
+      "physical_derived_pred": 60.5,
+      "moving_avg_pred": 69.7
+    },
+    {
+      "target_date": "2024-08-19",
+      "actual_aqi": 62,
+      "persistence_pred": 48.0,
+      "direct_rf_pred": 56.7,
+      "physical_derived_pred": 55.3,
+      "moving_avg_pred": 68.3
+    },
+    {
+      "target_date": "2024-08-20",
+      "actual_aqi": 50,
+      "persistence_pred": 62.0,
+      "direct_rf_pred": 61.3,
+      "physical_derived_pred": 60.2,
+      "moving_avg_pred": 67.3
+    },
+    {
+      "target_date": "2024-08-21",
+      "actual_aqi": 43,
+      "persistence_pred": 50.0,
+      "direct_rf_pred": 49.1,
+      "physical_derived_pred": 47.6,
+      "moving_avg_pred": 65.1
+    },
+    {
+      "target_date": "2024-08-22",
+      "actual_aqi": 46,
+      "persistence_pred": 43.0,
+      "direct_rf_pred": 45.1,
+      "physical_derived_pred": 44.2,
+      "moving_avg_pred": 59.6
+    },
+    {
+      "target_date": "2024-08-23",
+      "actual_aqi": 56,
+      "persistence_pred": 46.0,
+      "direct_rf_pred": 49.3,
+      "physical_derived_pred": 49.9,
+      "moving_avg_pred": 57.6
+    },
+    {
+      "target_date": "2024-08-24",
+      "actual_aqi": 55,
+      "persistence_pred": 56.0,
+      "direct_rf_pred": 58.5,
+      "physical_derived_pred": 57.5,
+      "moving_avg_pred": 55.3
+    },
+    {
+      "target_date": "2024-08-25",
+      "actual_aqi": 53,
+      "persistence_pred": 55.0,
+      "direct_rf_pred": 54.0,
+      "physical_derived_pred": 55.0,
+      "moving_avg_pred": 51.4
+    },
+    {
+      "target_date": "2024-08-26",
+      "actual_aqi": 51,
+      "persistence_pred": 53.0,
+      "direct_rf_pred": 54.5,
+      "physical_derived_pred": 55.1,
+      "moving_avg_pred": 52.1
+    },
+    {
+      "target_date": "2024-08-27",
+      "actual_aqi": 47,
+      "persistence_pred": 51.0,
+      "direct_rf_pred": 51.8,
+      "physical_derived_pred": 51.4,
+      "moving_avg_pred": 50.6
+    },
+    {
+      "target_date": "2024-08-28",
+      "actual_aqi": 49,
+      "persistence_pred": 47.0,
+      "direct_rf_pred": 50.4,
+      "physical_derived_pred": 49.3,
+      "moving_avg_pred": 50.1
+    },
+    {
+      "target_date": "2024-08-29",
+      "actual_aqi": 43,
+      "persistence_pred": 49.0,
+      "direct_rf_pred": 49.0,
+      "physical_derived_pred": 48.8,
+      "moving_avg_pred": 51.0
+    },
+    {
+      "target_date": "2024-08-30",
+      "actual_aqi": 48,
+      "persistence_pred": 43.0,
+      "direct_rf_pred": 43.3,
+      "physical_derived_pred": 42.7,
+      "moving_avg_pred": 50.6
+    },
+    {
+      "target_date": "2024-08-31",
+      "actual_aqi": 50,
+      "persistence_pred": 48.0,
+      "direct_rf_pred": 47.5,
+      "physical_derived_pred": 46.4,
+      "moving_avg_pred": 49.4
+    },
+    {
+      "target_date": "2024-09-01",
+      "actual_aqi": 49,
+      "persistence_pred": 50.0,
+      "direct_rf_pred": 51.3,
+      "physical_derived_pred": 49.2,
+      "moving_avg_pred": 48.7
+    },
+    {
+      "target_date": "2024-09-02",
+      "actual_aqi": 51,
+      "persistence_pred": 49.0,
+      "direct_rf_pred": 46.0,
+      "physical_derived_pred": 46.4,
+      "moving_avg_pred": 48.1
+    },
+    {
+      "target_date": "2024-09-03",
+      "actual_aqi": 58,
+      "persistence_pred": 51.0,
+      "direct_rf_pred": 51.8,
+      "physical_derived_pred": 51.9,
+      "moving_avg_pred": 48.1
+    },
+    {
+      "target_date": "2024-09-04",
+      "actual_aqi": 62,
+      "persistence_pred": 58.0,
+      "direct_rf_pred": 57.0,
+      "physical_derived_pred": 56.1,
+      "moving_avg_pred": 49.7
+    },
+    {
+      "target_date": "2024-09-05",
+      "actual_aqi": 58,
+      "persistence_pred": 62.0,
+      "direct_rf_pred": 58.4,
+      "physical_derived_pred": 59.2,
+      "moving_avg_pred": 51.6
+    },
+    {
+      "target_date": "2024-09-06",
+      "actual_aqi": 62,
+      "persistence_pred": 58.0,
+      "direct_rf_pred": 55.9,
+      "physical_derived_pred": 56.3,
+      "moving_avg_pred": 53.7
+    },
+    {
+      "target_date": "2024-09-07",
+      "actual_aqi": 51,
+      "persistence_pred": 62.0,
+      "direct_rf_pred": 55.6,
+      "physical_derived_pred": 55.9,
+      "moving_avg_pred": 55.7
+    },
+    {
+      "target_date": "2024-09-08",
+      "actual_aqi": 39,
+      "persistence_pred": 51.0,
+      "direct_rf_pred": 49.5,
+      "physical_derived_pred": 48.6,
+      "moving_avg_pred": 55.9
+    },
+    {
+      "target_date": "2024-09-09",
+      "actual_aqi": 51,
+      "persistence_pred": 39.0,
+      "direct_rf_pred": 39.5,
+      "physical_derived_pred": 39.0,
+      "moving_avg_pred": 54.4
+    },
+    {
+      "target_date": "2024-09-10",
+      "actual_aqi": 51,
+      "persistence_pred": 51.0,
+      "direct_rf_pred": 51.0,
+      "physical_derived_pred": 51.2,
+      "moving_avg_pred": 54.4
+    },
+    {
+      "target_date": "2024-09-11",
+      "actual_aqi": 54,
+      "persistence_pred": 51.0,
+      "direct_rf_pred": 50.0,
+      "physical_derived_pred": 48.6,
+      "moving_avg_pred": 53.4
+    },
+    {
+      "target_date": "2024-09-12",
+      "actual_aqi": 56,
+      "persistence_pred": 54.0,
+      "direct_rf_pred": 53.7,
+      "physical_derived_pred": 53.9,
+      "moving_avg_pred": 52.3
+    },
+    {
+      "target_date": "2024-09-13",
+      "actual_aqi": 58,
+      "persistence_pred": 56.0,
+      "direct_rf_pred": 56.1,
+      "physical_derived_pred": 57.1,
+      "moving_avg_pred": 52.0
+    },
+    {
+      "target_date": "2024-09-14",
+      "actual_aqi": 55,
+      "persistence_pred": 58.0,
+      "direct_rf_pred": 60.1,
+      "physical_derived_pred": 59.7,
+      "moving_avg_pred": 51.4
+    },
+    {
+      "target_date": "2024-09-15",
+      "actual_aqi": 50,
+      "persistence_pred": 55.0,
+      "direct_rf_pred": 56.5,
+      "physical_derived_pred": 55.5,
+      "moving_avg_pred": 52.0
+    },
+    {
+      "target_date": "2024-09-16",
+      "actual_aqi": 50,
+      "persistence_pred": 50.0,
+      "direct_rf_pred": 51.6,
+      "physical_derived_pred": 48.8,
+      "moving_avg_pred": 53.6
+    },
+    {
+      "target_date": "2024-09-17",
+      "actual_aqi": 47,
+      "persistence_pred": 50.0,
+      "direct_rf_pred": 50.3,
+      "physical_derived_pred": 49.3,
+      "moving_avg_pred": 53.4
+    },
+    {
+      "target_date": "2024-09-18",
+      "actual_aqi": 66,
+      "persistence_pred": 47.0,
+      "direct_rf_pred": 49.8,
+      "physical_derived_pred": 48.5,
+      "moving_avg_pred": 52.9
+    },
+    {
+      "target_date": "2024-09-19",
+      "actual_aqi": 70,
+      "persistence_pred": 66.0,
+      "direct_rf_pred": 70.0,
+      "physical_derived_pred": 66.9,
+      "moving_avg_pred": 54.6
+    },
+    {
+      "target_date": "2024-09-20",
+      "actual_aqi": 62,
+      "persistence_pred": 70.0,
+      "direct_rf_pred": 61.7,
+      "physical_derived_pred": 61.7,
+      "moving_avg_pred": 56.6
+    },
+    {
+      "target_date": "2024-09-21",
+      "actual_aqi": 58,
+      "persistence_pred": 62.0,
+      "direct_rf_pred": 63.9,
+      "physical_derived_pred": 60.3,
+      "moving_avg_pred": 57.1
+    },
+    {
+      "target_date": "2024-09-22",
+      "actual_aqi": 44,
+      "persistence_pred": 58.0,
+      "direct_rf_pred": 59.7,
+      "physical_derived_pred": 58.9,
+      "moving_avg_pred": 57.6
+    },
+    {
+      "target_date": "2024-09-23",
+      "actual_aqi": 46,
+      "persistence_pred": 44.0,
+      "direct_rf_pred": 49.8,
+      "physical_derived_pred": 49.1,
+      "moving_avg_pred": 56.7
+    },
+    {
+      "target_date": "2024-09-24",
+      "actual_aqi": 47,
+      "persistence_pred": 46.0,
+      "direct_rf_pred": 47.4,
+      "physical_derived_pred": 46.8,
+      "moving_avg_pred": 56.1
+    },
+    {
+      "target_date": "2024-09-25",
+      "actual_aqi": 47,
+      "persistence_pred": 47.0,
+      "direct_rf_pred": 47.4,
+      "physical_derived_pred": 46.8,
+      "moving_avg_pred": 56.1
+    },
+    {
+      "target_date": "2024-09-26",
+      "actual_aqi": 51,
+      "persistence_pred": 47.0,
+      "direct_rf_pred": 47.8,
+      "physical_derived_pred": 46.6,
+      "moving_avg_pred": 53.4
+    },
+    {
+      "target_date": "2024-09-27",
+      "actual_aqi": 57,
+      "persistence_pred": 51.0,
+      "direct_rf_pred": 51.9,
+      "physical_derived_pred": 51.1,
+      "moving_avg_pred": 50.7
+    },
+    {
+      "target_date": "2024-09-28",
+      "actual_aqi": 60,
+      "persistence_pred": 57.0,
+      "direct_rf_pred": 56.3,
+      "physical_derived_pred": 55.1,
+      "moving_avg_pred": 50.0
+    },
+    {
+      "target_date": "2024-09-29",
+      "actual_aqi": 54,
+      "persistence_pred": 60.0,
+      "direct_rf_pred": 58.4,
+      "physical_derived_pred": 57.4,
+      "moving_avg_pred": 50.3
+    },
+    {
+      "target_date": "2024-09-30",
+      "actual_aqi": 65,
+      "persistence_pred": 54.0,
+      "direct_rf_pred": 56.6,
+      "physical_derived_pred": 56.1,
+      "moving_avg_pred": 51.7
+    },
+    {
+      "target_date": "2024-10-01",
+      "actual_aqi": 68,
+      "persistence_pred": 65.0,
+      "direct_rf_pred": 65.2,
+      "physical_derived_pred": 61.5,
+      "moving_avg_pred": 54.4
+    },
+    {
+      "target_date": "2024-10-02",
+      "actual_aqi": 53,
+      "persistence_pred": 68.0,
+      "direct_rf_pred": 66.2,
+      "physical_derived_pred": 62.3,
+      "moving_avg_pred": 57.4
+    },
+    {
+      "target_date": "2024-10-03",
+      "actual_aqi": 43,
+      "persistence_pred": 53.0,
+      "direct_rf_pred": 55.0,
+      "physical_derived_pred": 52.7,
+      "moving_avg_pred": 58.3
+    },
+    {
+      "target_date": "2024-10-04",
+      "actual_aqi": 60,
+      "persistence_pred": 43.0,
+      "direct_rf_pred": 51.1,
+      "physical_derived_pred": 51.0,
+      "moving_avg_pred": 57.1
+    },
+    {
+      "target_date": "2024-10-05",
+      "actual_aqi": 45,
+      "persistence_pred": 60.0,
+      "direct_rf_pred": 62.9,
+      "physical_derived_pred": 58.6,
+      "moving_avg_pred": 57.6
+    },
+    {
+      "target_date": "2024-10-06",
+      "actual_aqi": 61,
+      "persistence_pred": 45.0,
+      "direct_rf_pred": 50.7,
+      "physical_derived_pred": 47.6,
+      "moving_avg_pred": 55.4
+    },
+    {
+      "target_date": "2024-10-07",
+      "actual_aqi": 91,
+      "persistence_pred": 61.0,
+      "direct_rf_pred": 64.7,
+      "physical_derived_pred": 62.0,
+      "moving_avg_pred": 56.4
+    },
+    {
+      "target_date": "2024-10-08",
+      "actual_aqi": 59,
+      "persistence_pred": 91.0,
+      "direct_rf_pred": 90.5,
+      "physical_derived_pred": 125.7,
+      "moving_avg_pred": 60.1
+    },
+    {
+      "target_date": "2024-10-09",
+      "actual_aqi": 60,
+      "persistence_pred": 59.0,
+      "direct_rf_pred": 59.2,
+      "physical_derived_pred": 57.0,
+      "moving_avg_pred": 58.9
+    },
+    {
+      "target_date": "2024-10-10",
+      "actual_aqi": 55,
+      "persistence_pred": 60.0,
+      "direct_rf_pred": 58.6,
+      "physical_derived_pred": 56.7,
+      "moving_avg_pred": 59.9
+    },
+    {
+      "target_date": "2024-10-11",
+      "actual_aqi": 48,
+      "persistence_pred": 55.0,
+      "direct_rf_pred": 56.8,
+      "physical_derived_pred": 57.0,
+      "moving_avg_pred": 61.6
+    },
+    {
+      "target_date": "2024-10-12",
+      "actual_aqi": 40,
+      "persistence_pred": 48.0,
+      "direct_rf_pred": 50.0,
+      "physical_derived_pred": 49.0,
+      "moving_avg_pred": 59.9
+    },
+    {
+      "target_date": "2024-10-13",
+      "actual_aqi": 32,
+      "persistence_pred": 40.0,
+      "direct_rf_pred": 52.0,
+      "physical_derived_pred": 52.8,
+      "moving_avg_pred": 59.1
+    },
+    {
+      "target_date": "2024-10-14",
+      "actual_aqi": 36,
+      "persistence_pred": 32.0,
+      "direct_rf_pred": 53.0,
+      "physical_derived_pred": 51.9,
+      "moving_avg_pred": 55.0
+    },
+    {
+      "target_date": "2024-10-15",
+      "actual_aqi": 35,
+      "persistence_pred": 36.0,
+      "direct_rf_pred": 42.3,
+      "physical_derived_pred": 42.1,
+      "moving_avg_pred": 47.1
+    },
+    {
+      "target_date": "2024-10-16",
+      "actual_aqi": 41,
+      "persistence_pred": 35.0,
+      "direct_rf_pred": 54.9,
+      "physical_derived_pred": 53.0,
+      "moving_avg_pred": 43.7
+    },
+    {
+      "target_date": "2024-10-17",
+      "actual_aqi": 41,
+      "persistence_pred": 41.0,
+      "direct_rf_pred": 54.7,
+      "physical_derived_pred": 53.3,
+      "moving_avg_pred": 41.0
+    },
+    {
+      "target_date": "2024-10-18",
+      "actual_aqi": 52,
+      "persistence_pred": 41.0,
+      "direct_rf_pred": 57.1,
+      "physical_derived_pred": 56.9,
+      "moving_avg_pred": 39.0
+    },
+    {
+      "target_date": "2024-10-19",
+      "actual_aqi": 45,
+      "persistence_pred": 52.0,
+      "direct_rf_pred": 55.9,
+      "physical_derived_pred": 54.5,
+      "moving_avg_pred": 39.6
+    },
+    {
+      "target_date": "2024-10-20",
+      "actual_aqi": 45,
+      "persistence_pred": 45.0,
+      "direct_rf_pred": 50.6,
+      "physical_derived_pred": 49.5,
+      "moving_avg_pred": 40.3
+    },
+    {
+      "target_date": "2024-10-21",
+      "actual_aqi": 48,
+      "persistence_pred": 45.0,
+      "direct_rf_pred": 55.8,
+      "physical_derived_pred": 53.1,
+      "moving_avg_pred": 42.1
+    },
+    {
+      "target_date": "2024-10-22",
+      "actual_aqi": 43,
+      "persistence_pred": 48.0,
+      "direct_rf_pred": 53.7,
+      "physical_derived_pred": 52.5,
+      "moving_avg_pred": 43.9
+    },
+    {
+      "target_date": "2024-10-23",
+      "actual_aqi": 57,
+      "persistence_pred": 43.0,
+      "direct_rf_pred": 52.4,
+      "physical_derived_pred": 52.2,
+      "moving_avg_pred": 45.0
+    },
+    {
+      "target_date": "2024-10-24",
+      "actual_aqi": 68,
+      "persistence_pred": 57.0,
+      "direct_rf_pred": 65.1,
+      "physical_derived_pred": 61.3,
+      "moving_avg_pred": 47.3
+    },
+    {
+      "target_date": "2024-10-25",
+      "actual_aqi": 108,
+      "persistence_pred": 68.0,
+      "direct_rf_pred": 66.2,
+      "physical_derived_pred": 62.8,
+      "moving_avg_pred": 51.1
+    },
+    {
+      "target_date": "2024-10-26",
+      "actual_aqi": 147,
+      "persistence_pred": 108.0,
+      "direct_rf_pred": 100.0,
+      "physical_derived_pred": 96.2,
+      "moving_avg_pred": 59.1
+    },
+    {
+      "target_date": "2024-10-27",
+      "actual_aqi": 136,
+      "persistence_pred": 147.0,
+      "direct_rf_pred": 134.8,
+      "physical_derived_pred": 117.9,
+      "moving_avg_pred": 73.7
+    },
+    {
+      "target_date": "2024-10-28",
+      "actual_aqi": 124,
+      "persistence_pred": 136.0,
+      "direct_rf_pred": 138.7,
+      "physical_derived_pred": 119.3,
+      "moving_avg_pred": 86.7
+    },
+    {
+      "target_date": "2024-10-29",
+      "actual_aqi": 118,
+      "persistence_pred": 124.0,
+      "direct_rf_pred": 125.9,
+      "physical_derived_pred": 112.9,
+      "moving_avg_pred": 97.6
+    },
+    {
+      "target_date": "2024-10-30",
+      "actual_aqi": 126,
+      "persistence_pred": 118.0,
+      "direct_rf_pred": 105.6,
+      "physical_derived_pred": 103.3,
+      "moving_avg_pred": 108.3
+    },
+    {
+      "target_date": "2024-10-31",
+      "actual_aqi": 141,
+      "persistence_pred": 126.0,
+      "direct_rf_pred": 103.8,
+      "physical_derived_pred": 104.3,
+      "moving_avg_pred": 118.1
+    }
+  ]
+}
